@@ -12,7 +12,7 @@ import { TechnicalBadge } from "@/components/ui/TechnicalBadge";
 export const metadata: Metadata = {
   title: "The Collective",
   description:
-    "Meet the creative engineers, shader architects, and design technologists behind Kinetic Atelier.",
+    "Meet the creative engineers, shader architects, and design technologists behind JAHVA.",
 };
 
 export default function TeamPage() {

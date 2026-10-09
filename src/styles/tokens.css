@@ -17,10 +17,10 @@
   --color-text-muted: #556E84;
   --color-text-inverse: #FFFFFF;
 
-  /* Single Locked Accent: Coral Orange */
-  --color-accent-primary: #EF8557;
-  --color-accent-subtle: rgba(239, 133, 87, 0.18);
-  --color-accent-glow: rgba(239, 133, 87, 0.35);
+  /* Single Locked Accent: Dark Burnt Orange */
+  --color-accent-primary: #D84A1B;
+  --color-accent-subtle: rgba(216, 74, 27, 0.16);
+  --color-accent-glow: rgba(216, 74, 27, 0.32);
 
   /* Status Tokens */
   --color-success: #0d9488;

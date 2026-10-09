@@ -33,10 +33,10 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="h-6 w-6 rounded bg-surface-shell ring-1 ring-border-subtle text-accent font-mono font-bold text-xs flex items-center justify-center">
-                KA
+                JH
               </span>
               <span className="font-bold text-sm tracking-tight text-brand-text">
-                KINETIC ATELIER
+                JAHVA
               </span>
             </div>
             <p className="text-xs text-brand-muted max-w-sm leading-relaxed">
@@ -68,7 +68,7 @@ export function Footer() {
           </div>
 
           <div className="text-xs text-brand-muted font-mono">
-            &copy; {new Date().getFullYear()} Kinetic Atelier. All rights reserved.
+            &copy; {new Date().getFullYear()} JAHVA. All rights reserved.
           </div>
         </div>
       </div>

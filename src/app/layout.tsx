@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "KINETIC ATELIER | Creative Engineering Collective",
-    template: "%s | KINETIC ATELIER",
+    default: "JAHVA | Creative Engineering Collective",
+    template: "%s | JAHVA",
   },
   description:
     "An architectural creative engineering collective crafting award-level web applications, procedural shaders, and high-performance digital systems.",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "nextjs",
     "gsap",
   ],
-  authors: [{ name: "Kinetic Atelier Collective" }],
+  authors: [{ name: "JAHVA Collective" }],
   openGraph: {
-    title: "KINETIC ATELIER | Creative Engineering Collective",
+    title: "JAHVA | Creative Engineering Collective",
     description:
       "An architectural creative engineering collective crafting award-level web applications, procedural shaders, and high-performance digital systems.",
     type: "website",

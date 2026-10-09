@@ -15,7 +15,7 @@ import { TechnicalBadge } from "@/components/ui/TechnicalBadge";
 export const metadata: Metadata = {
   title: "Skills & Technical Capabilities",
   description:
-    "Comprehensive engineering taxonomy and architectural capabilities of Kinetic Atelier.",
+    "Comprehensive engineering taxonomy and architectural capabilities of JAHVA.",
 };
 
 const CATEGORIES = [

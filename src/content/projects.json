@@ -9,7 +9,7 @@
     "sector": "Acoustic Hardware & Software",
     "liveUrl": "https://aura-audio.example.com",
     "heroImage": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
-    "overview": "Aura tasked Kinetic Atelier with engineering an in-browser spatial audio acoustic studio that allows sound designers to test 3D binaural reverberation in virtual architectural rooms directly inside Chromium and WebKit.",
+    "overview": "Aura tasked JAHVA with engineering an in-browser spatial audio acoustic studio that allows sound designers to test 3D binaural reverberation in virtual architectural rooms directly inside Chromium and WebKit.",
     "challenge": "Rendering 60fps real-time raytraced audio reflections alongside an interactive 3D mesh visualizer while maintaining audio thread latency strictly below 10 milliseconds without dropouts.",
     "solution": "We segregated the audio DSP engine into dedicated background AudioWorklets running optimized WebAssembly filters, while the visualizer utilizes custom GLSL vertex shaders to deform room boundaries based on frequency spectrum analysis.",
     "results": [

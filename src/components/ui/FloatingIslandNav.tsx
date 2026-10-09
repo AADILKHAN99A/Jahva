@@ -58,13 +58,13 @@ export function FloatingIslandNav() {
           <Link
             href="/"
             className="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md py-1"
-            aria-label="Kinetic Atelier Home"
+            aria-label="JAHVA Home"
           >
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-shell ring-1 ring-border-subtle text-accent font-mono font-bold text-sm tracking-wider transition-transform group-hover:scale-105">
-              KA
+              JH
             </span>
             <span className="font-bold tracking-tight text-sm text-brand-text hidden sm:inline-block">
-              KINETIC ATELIER
+              JAHVA
             </span>
           </Link>
 
