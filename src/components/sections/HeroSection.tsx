@@ -21,8 +21,8 @@ const AmbientCanvas = dynamic(
 export function HeroSection() {
   return (
     <section className="relative min-h-[100dvh] flex flex-col justify-center pt-28 pb-20 px-6 lg:px-8 max-w-7xl mx-auto w-full">
-      {/* Background Procedural WebGL Wireframe Terrain (60% Opacity) */}
-      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-60">
+      {/* Background Procedural WebGL Wireframe Terrain (40% Opacity) */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-40">
         <AmbientCanvas className="h-full w-full pointer-events-none" />
       </div>
 

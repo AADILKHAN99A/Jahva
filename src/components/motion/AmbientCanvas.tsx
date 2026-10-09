@@ -57,7 +57,7 @@ export function AmbientCanvas({ className }: AmbientCanvasProps = {}) {
       color: 0x226192, // Deep Editorial Blue accent
       wireframe: true,
       transparent: true,
-      opacity: 0.6,
+      opacity: 0.4,
     });
 
     const mesh = new THREE.Mesh(geometry, material);
