@@ -23,8 +23,8 @@ export function DoubleBezelCard({
     <Component
       className={cn(
         "group relative rounded-3xl p-2 bg-surface-shell",
-        "ring-1 ring-white/10 transition-all duration-300 ease-out",
-        "hover:ring-white/20 hover:shadow-2xl hover:shadow-black/50",
+        "ring-1 ring-border-subtle transition-all duration-300 ease-out",
+        "hover:ring-border-visible hover:shadow-xl hover:shadow-black/10",
         className
       )}
       {...props}
@@ -32,7 +32,7 @@ export function DoubleBezelCard({
       <div
         className={cn(
           "relative h-full w-full rounded-[calc(1.5rem-0.125rem)] bg-surface-core p-6",
-          "shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)]",
+          "shadow-[inset_0_1px_2px_rgba(255,255,255,0.7)]",
           "transition-transform duration-300 ease-out group-hover:-translate-y-0.5",
           innerClassName
         )}

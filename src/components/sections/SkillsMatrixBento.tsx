@@ -60,7 +60,7 @@ export function SkillsMatrixBento({ skills }: SkillsMatrixBentoProps) {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-6 border-t border-white/10">
+              <div className="flex flex-wrap gap-2 pt-6 border-t border-border-subtle">
                 {creativeDev.map((s) => (
                   <TechnicalBadge key={s.id} active={s.mastery === "specialist"}>
                     {s.name}
@@ -75,7 +75,7 @@ export function SkillsMatrixBento({ skills }: SkillsMatrixBentoProps) {
         <div className="md:col-span-5 md:row-span-1">
           <DoubleBezelCard className="h-full">
             <div className="flex flex-col justify-between h-full">
-              <div className="flex items-center gap-2 text-zinc-300 mb-2">
+              <div className="flex items-center gap-2 text-brand-secondary mb-2">
                 <Cpu size={18} weight="bold" />
                 <h4 className="font-mono text-xs uppercase tracking-wider font-semibold text-brand-muted">
                   Systems &amp; Edge
@@ -99,7 +99,7 @@ export function SkillsMatrixBento({ skills }: SkillsMatrixBentoProps) {
         <div className="md:col-span-5 md:row-span-1">
           <DoubleBezelCard className="h-full bg-surface-shell/80">
             <div className="flex flex-col justify-between h-full">
-              <div className="flex items-center gap-2 text-zinc-300 mb-2">
+              <div className="flex items-center gap-2 text-brand-secondary mb-2">
                 <Globe size={18} weight="bold" />
                 <h4 className="font-mono text-xs uppercase tracking-wider font-semibold text-brand-muted">
                   Spatial 3D
@@ -124,7 +124,7 @@ export function SkillsMatrixBento({ skills }: SkillsMatrixBentoProps) {
           <DoubleBezelCard className="h-full">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
-                <div className="flex items-center gap-2 text-zinc-300 mb-2">
+                <div className="flex items-center gap-2 text-brand-secondary mb-2">
                   <DeviceMobile size={18} weight="bold" />
                   <h4 className="font-mono text-xs uppercase tracking-wider font-semibold text-brand-muted">
                     Interface Systems

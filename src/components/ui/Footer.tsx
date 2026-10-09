@@ -7,7 +7,7 @@ import { IslandButton } from "./IslandButton";
  */
 export function Footer() {
   return (
-    <footer className="relative mt-auto border-t border-white/10 bg-canvas-subtle">
+    <footer className="relative mt-auto border-t border-border-subtle bg-canvas-subtle">
       {/* Pre-footer Callout Banner */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
@@ -28,11 +28,11 @@ export function Footer() {
       </div>
 
       {/* Navigation & Legal Coordinates */}
-      <div className="border-t border-white/[0.06] bg-canvas-base py-12">
+      <div className="border-t border-border-subtle bg-canvas-base py-12">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <div>
             <div className="flex items-center gap-2 mb-2">
-              <span className="h-6 w-6 rounded bg-surface-shell ring-1 ring-white/15 text-accent font-mono font-bold text-xs flex items-center justify-center">
+              <span className="h-6 w-6 rounded bg-surface-shell ring-1 ring-border-subtle text-accent font-mono font-bold text-xs flex items-center justify-center">
                 KA
               </span>
               <span className="font-bold text-sm tracking-tight text-brand-text">

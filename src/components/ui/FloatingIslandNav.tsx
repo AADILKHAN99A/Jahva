@@ -50,7 +50,7 @@ export function FloatingIslandNav() {
           className={cn(
             "mx-auto flex items-center justify-between transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
             isScrolled
-              ? "max-w-3xl pointer-events-auto rounded-full bg-surface-elevated/85 backdrop-blur-xl ring-1 ring-white/10 px-6 py-2.5 shadow-2xl shadow-black/60"
+              ? "max-w-3xl pointer-events-auto rounded-full bg-surface-elevated/90 backdrop-blur-xl ring-1 ring-border-visible px-6 py-2.5 shadow-xl shadow-black/10"
               : "max-w-7xl px-6 lg:px-8"
           )}
         >
@@ -60,7 +60,7 @@ export function FloatingIslandNav() {
             className="flex items-center gap-2 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md py-1"
             aria-label="Kinetic Atelier Home"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-shell ring-1 ring-white/15 text-accent font-mono font-bold text-sm tracking-wider transition-transform group-hover:scale-105">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-surface-shell ring-1 ring-border-subtle text-accent font-mono font-bold text-sm tracking-wider transition-transform group-hover:scale-105">
               KA
             </span>
             <span className="font-bold tracking-tight text-sm text-brand-text hidden sm:inline-block">
@@ -70,7 +70,7 @@ export function FloatingIslandNav() {
 
           {/* Desktop Nav Links */}
           <nav
-            className="hidden md:flex items-center gap-1 bg-surface-shell/50 p-1 rounded-full ring-1 ring-white/10"
+            className="hidden md:flex items-center gap-1 bg-surface-shell/60 p-1 rounded-full ring-1 ring-border-subtle"
             aria-label="Main Navigation"
           >
             {NAV_LINKS.map((link) => {
@@ -83,7 +83,7 @@ export function FloatingIslandNav() {
                     "px-4 py-1.5 rounded-full text-xs font-medium transition-colors",
                     isActive
                       ? "bg-accent/15 text-accent ring-1 ring-accent/30 font-semibold"
-                      : "text-brand-secondary hover:text-brand-text hover:bg-white/[0.04]"
+                      : "text-brand-secondary hover:text-brand-text hover:bg-black/[0.04]"
                   )}
                 >
                   {link.label}
@@ -103,7 +103,7 @@ export function FloatingIslandNav() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex md:hidden h-9 w-9 items-center justify-center rounded-full bg-surface-shell ring-1 ring-white/15 text-brand-text hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="flex md:hidden h-9 w-9 items-center justify-center rounded-full bg-surface-shell ring-1 ring-border-subtle text-brand-text hover:bg-black/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle Navigation Menu"
           >
@@ -134,7 +134,7 @@ export function FloatingIslandNav() {
             })}
           </nav>
 
-          <div className="pt-8 border-t border-white/10 flex flex-col gap-4">
+          <div className="pt-8 border-t border-border-subtle flex flex-col gap-4">
             <IslandButton href="/contact" variant="primary" className="w-full justify-center">
               Initiate Project
             </IslandButton>

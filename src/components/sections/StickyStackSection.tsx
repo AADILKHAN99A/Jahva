@@ -79,7 +79,7 @@ export function StickyStackSection({ projects }: StickyStackSectionProps) {
             <DoubleBezelCard className="w-full max-w-6xl shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 {/* Visual Media Column */}
-                <div className="lg:col-span-7 relative h-64 sm:h-80 lg:h-[440px] w-full rounded-2xl overflow-hidden bg-surface-shell ring-1 ring-white/10">
+                <div className="lg:col-span-7 relative h-64 sm:h-80 lg:h-[440px] w-full rounded-2xl overflow-hidden bg-surface-shell ring-1 ring-border-subtle">
                   <Image
                     src={project.heroImage}
                     alt={project.title}
@@ -114,7 +114,7 @@ export function StickyStackSection({ projects }: StickyStackSectionProps) {
                     </p>
 
                     {/* Key Metrics Grid */}
-                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10 mb-8">
+                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-border-subtle mb-8">
                       {project.results.slice(0, 2).map((res) => (
                         <div key={res.label}>
                           <div className="text-2xl font-bold text-accent font-mono">

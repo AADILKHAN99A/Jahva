@@ -70,7 +70,7 @@ export function HorizontalProcessSection() {
   }, [prefersReduced]);
 
   return (
-    <section ref={wrapRef} className="relative py-20 lg:py-0 overflow-hidden bg-canvas-subtle border-y border-white/[0.06]">
+    <section ref={wrapRef} className="relative py-20 lg:py-0 overflow-hidden bg-canvas-subtle border-y border-border-subtle">
       <div className="lg:h-[100dvh] flex flex-col justify-center px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="mb-8 lg:mb-12">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent mb-3">
@@ -104,8 +104,8 @@ export function HorizontalProcessSection() {
                       {stage.description}
                     </p>
                   </div>
-                  <div className="pt-4 border-t border-white/10 font-mono text-xs text-brand-muted">
-                    Focus: <span className="text-zinc-300">{stage.focus}</span>
+                  <div className="pt-4 border-t border-border-subtle font-mono text-xs text-brand-muted">
+                    Focus: <span className="text-brand-secondary font-semibold">{stage.focus}</span>
                   </div>
                 </div>
               </DoubleBezelCard>

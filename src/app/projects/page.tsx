@@ -38,7 +38,7 @@ export default function ProjectsPage() {
 
         {/* Section 1: Flagship Works */}
         <section className="mb-28">
-          <div className="flex items-center justify-between mb-10 pb-4 border-b border-white/10">
+          <div className="flex items-center justify-between mb-10 pb-4 border-b border-border-subtle">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-brand-text">
                 Team Flagship Systems
@@ -57,7 +57,7 @@ export default function ProjectsPage() {
               <DoubleBezelCard key={project.slug} className="h-full">
                 <div className="flex flex-col h-full justify-between">
                   <div>
-                    <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-white/10">
+                    <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-border-subtle">
                       <Image
                         src={project.heroImage}
                         alt={project.title}
@@ -88,7 +88,7 @@ export default function ProjectsPage() {
                     </p>
 
                     {/* Metric highlights */}
-                    <div className="grid grid-cols-2 gap-4 p-4 rounded-xl bg-surface-shell/40 ring-1 ring-white/5 mb-6">
+                    <div className="grid grid-cols-2 gap-4 p-4 rounded-xl bg-surface-shell/40 ring-1 ring-border-subtle mb-6">
                       {project.results.slice(0, 2).map((res) => (
                         <div key={res.label}>
                           <div className="font-mono text-xl font-bold text-accent">
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
 
         {/* Section 2: Individual Projects */}
         <section>
-          <div className="flex items-center justify-between mb-10 pb-4 border-b border-white/10">
+          <div className="flex items-center justify-between mb-10 pb-4 border-b border-border-subtle">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-brand-text">
                 Individual Member Experiments
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
               <DoubleBezelCard key={project.id} className="h-full">
                 <div className="flex flex-col h-full justify-between">
                   <div>
-                    <div className="relative h-44 w-full rounded-2xl overflow-hidden mb-4 bg-surface-shell ring-1 ring-white/10">
+                    <div className="relative h-44 w-full rounded-2xl overflow-hidden mb-4 bg-surface-shell ring-1 ring-border-subtle">
                       <Image
                         src={project.previewImage}
                         alt={project.title}
@@ -176,7 +176,7 @@ export default function ProjectsPage() {
                     </div>
                   </div>
 
-                  <div className="pt-3 border-t border-white/10 flex items-center justify-between">
+                  <div className="pt-3 border-t border-border-subtle flex items-center justify-between">
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}

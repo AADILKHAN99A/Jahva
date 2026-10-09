@@ -30,11 +30,11 @@ export function IslandButton({
     "transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
     "active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas-base",
     variant === "primary" &&
-      "bg-accent text-brand-inverse font-semibold shadow-lg shadow-accent/20 hover:bg-accent/90 hover:shadow-accent/40",
+      "bg-accent text-white font-semibold shadow-lg shadow-accent/25 hover:bg-accent/90 hover:shadow-accent/40",
     variant === "secondary" &&
-      "bg-surface-elevated text-brand-text ring-1 ring-white/10 hover:ring-white/25 hover:bg-surface-elevated/80",
+      "bg-surface-elevated text-brand-text ring-1 ring-border-subtle hover:ring-border-visible hover:bg-surface-core",
     variant === "ghost" &&
-      "bg-transparent text-brand-secondary hover:text-brand-text hover:bg-white/5",
+      "bg-transparent text-brand-secondary hover:text-brand-text hover:bg-black/[0.04]",
     className
   );
 
@@ -43,7 +43,7 @@ export function IslandButton({
       className={cn(
         "flex h-7 w-7 items-center justify-center rounded-full transition-transform duration-300 ease-out",
         "group-hover:translate-x-0.5 group-hover:-translate-y-0.5",
-        variant === "primary" ? "bg-black/15 text-black" : "bg-white/10 text-brand-text"
+        variant === "primary" ? "bg-black/15 text-white" : "bg-black/5 text-brand-text"
       )}
       aria-hidden="true"
     >

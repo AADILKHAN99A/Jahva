@@ -11,7 +11,7 @@ const AmbientCanvas = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl bg-surface-shell/30 ring-1 ring-white/10 animate-pulse" />
+      <div className="h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl bg-surface-shell/30 ring-1 ring-border-subtle animate-pulse" />
     ),
   }
 );

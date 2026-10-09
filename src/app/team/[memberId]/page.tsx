@@ -76,7 +76,7 @@ export default async function MemberProfilePage({
         {/* Hero Masthead Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
           <div className="lg:col-span-5">
-            <div className="relative h-96 sm:h-[460px] w-full rounded-3xl overflow-hidden bg-surface-shell ring-1 ring-white/10 shadow-2xl">
+            <div className="relative h-96 sm:h-[460px] w-full rounded-3xl overflow-hidden bg-surface-shell ring-1 ring-border-subtle shadow-2xl">
               <Image
                 src={member.avatarUrl}
                 alt={member.name}
@@ -100,11 +100,11 @@ export default async function MemberProfilePage({
             <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-brand-text mb-2">
               {member.name}
             </h1>
-            <p className="font-mono text-sm sm:text-base text-zinc-400 mb-6 font-medium">
+            <p className="font-mono text-sm sm:text-base text-brand-muted mb-6 font-medium">
               {member.title}
             </p>
 
-            <blockquote className="border-l-2 border-accent/40 pl-4 py-2 text-base sm:text-lg italic text-zinc-200 mb-8 font-medium leading-relaxed">
+            <blockquote className="border-l-2 border-accent/40 pl-4 py-2 text-base sm:text-lg italic text-brand-secondary mb-8 font-medium leading-relaxed">
               &ldquo;{member.philosophy}&rdquo;
             </blockquote>
 
@@ -113,7 +113,7 @@ export default async function MemberProfilePage({
             </p>
 
             {/* Direct Connect Links */}
-            <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-white/10">
+            <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-border-subtle">
               <a
                 href={`mailto:${member.links.email}`}
                 className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-semibold bg-accent text-brand-inverse hover:bg-accent/90 transition-colors"
@@ -127,7 +127,7 @@ export default async function MemberProfilePage({
                   href={member.links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-medium bg-surface-elevated text-brand-text ring-1 ring-white/10 hover:bg-white/10 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-medium bg-surface-elevated text-brand-text ring-1 ring-border-subtle hover:bg-surface-shell transition-colors"
                 >
                   <GithubLogo size={16} weight="bold" />
                   <span>GitHub</span>
@@ -194,7 +194,7 @@ export default async function MemberProfilePage({
               <DoubleBezelCard key={project.slug}>
                 <div className="flex flex-col h-full justify-between">
                   <div>
-                    <div className="relative h-56 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-white/10">
+                    <div className="relative h-56 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-border-subtle">
                       <Image
                         src={project.heroImage}
                         alt={project.title}
@@ -241,7 +241,7 @@ export default async function MemberProfilePage({
               <DoubleBezelCard key={project.id}>
                 <div className="flex flex-col h-full justify-between">
                   <div>
-                    <div className="relative h-60 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-white/10">
+                    <div className="relative h-60 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-border-subtle">
                       <Image
                         src={project.previewImage}
                         alt={project.title}
@@ -269,7 +269,7 @@ export default async function MemberProfilePage({
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-white/10 flex items-center gap-4">
+                  <div className="pt-4 border-t border-border-subtle flex items-center gap-4">
                     {project.liveUrl && (
                       <a
                         href={project.liveUrl}

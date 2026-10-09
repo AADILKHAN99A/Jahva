@@ -43,7 +43,7 @@ export default function TeamPage() {
                 <div>
                   {/* Member Masthead */}
                   <div className="flex flex-col sm:flex-row gap-6 mb-8 items-start sm:items-center">
-                    <div className="relative h-28 w-28 shrink-0 rounded-2xl overflow-hidden bg-surface-shell ring-1 ring-white/10">
+                    <div className="relative h-28 w-28 shrink-0 rounded-2xl overflow-hidden bg-surface-shell ring-1 ring-border-subtle">
                       <Image
                         src={member.avatarUrl}
                         alt={member.name}
@@ -68,7 +68,7 @@ export default function TeamPage() {
                   </div>
 
                   {/* Philosophy & Bio */}
-                  <blockquote className="border-l-2 border-accent/40 pl-4 py-1 text-sm italic text-zinc-300 mb-6 font-medium">
+                  <blockquote className="border-l-2 border-accent/40 pl-4 py-1 text-sm italic text-brand-secondary mb-6 font-medium">
                     &ldquo;{member.philosophy}&rdquo;
                   </blockquote>
 
@@ -99,7 +99,7 @@ export default function TeamPage() {
                       {member.individualProjects.map((p) => (
                         <div
                           key={p.id}
-                          className="p-3 rounded-xl bg-surface-shell/50 ring-1 ring-white/5 flex items-center justify-between"
+                          className="p-3 rounded-xl bg-surface-shell/50 ring-1 ring-border-subtle flex items-center justify-between"
                         >
                           <div>
                             <div className="text-xs font-semibold text-brand-text">
@@ -109,7 +109,7 @@ export default function TeamPage() {
                               {p.tags.join(" - ")}
                             </div>
                           </div>
-                          <span className="font-mono text-[11px] text-zinc-400">
+                          <span className="font-mono text-[11px] text-brand-muted">
                             {p.year}
                           </span>
                         </div>
@@ -119,7 +119,7 @@ export default function TeamPage() {
                 </div>
 
                 {/* Card Footer: Profile Link & Socials */}
-                <div className="pt-6 border-t border-white/10 flex items-center justify-between">
+                <div className="pt-6 border-t border-border-subtle flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     {member.links.github && (
                       <a

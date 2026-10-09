@@ -90,7 +90,7 @@ export default async function ProjectCaseStudyPage({
         </div>
 
         {/* Metadata Dossier Bar */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 p-6 rounded-2xl bg-surface-shell ring-1 ring-white/10 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 p-6 rounded-2xl bg-surface-shell ring-1 ring-border-subtle mb-16">
           <div>
             <div className="font-mono text-xs text-brand-muted uppercase tracking-wider">
               Client
@@ -136,7 +136,7 @@ export default async function ProjectCaseStudyPage({
         </div>
 
         {/* Hero Full-Bleed Media */}
-        <div className="relative h-80 sm:h-[500px] lg:h-[620px] w-full rounded-3xl overflow-hidden mb-24 bg-surface-shell ring-1 ring-white/10 shadow-2xl">
+        <div className="relative h-80 sm:h-[500px] lg:h-[620px] w-full rounded-3xl overflow-hidden mb-24 bg-surface-shell ring-1 ring-border-subtle shadow-2xl">
           <Image
             src={project.heroImage}
             alt={project.title}
@@ -167,7 +167,7 @@ export default async function ProjectCaseStudyPage({
                 {project.results.map((res) => (
                   <div
                     key={res.label}
-                    className="flex items-center justify-between pb-3 border-b border-white/10 last:border-none last:pb-0"
+                    className="flex items-center justify-between pb-3 border-b border-border-subtle last:border-none last:pb-0"
                   >
                     <span className="text-xs text-brand-secondary">
                       {res.label}
@@ -221,7 +221,7 @@ export default async function ProjectCaseStudyPage({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {project.artifacts.map((art) => (
               <DoubleBezelCard key={art.title}>
-                <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden mb-4 bg-surface-shell ring-1 ring-white/10">
+                <div className="relative h-64 sm:h-72 w-full rounded-2xl overflow-hidden mb-4 bg-surface-shell ring-1 ring-border-subtle">
                   <Image
                     src={art.imageUrl}
                     alt={art.title}
@@ -242,10 +242,10 @@ export default async function ProjectCaseStudyPage({
         </section>
 
         {/* Technologies & Contributor Credits */}
-        <section className="mb-24 p-8 rounded-3xl bg-surface-shell ring-1 ring-white/10">
+        <section className="mb-24 p-8 rounded-3xl bg-surface-shell ring-1 ring-border-subtle">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4 text-zinc-300">
+              <div className="flex items-center gap-2 mb-4 text-brand-secondary">
                 <Code size={18} weight="bold" />
                 <h3 className="font-mono text-xs uppercase tracking-wider font-semibold">
                   Technologies Deployed
@@ -264,7 +264,7 @@ export default async function ProjectCaseStudyPage({
             </div>
 
             <div>
-              <div className="flex items-center gap-2 mb-4 text-zinc-300">
+              <div className="flex items-center gap-2 mb-4 text-brand-secondary">
                 <Users size={18} weight="bold" />
                 <h3 className="font-mono text-xs uppercase tracking-wider font-semibold">
                   Contributing Partners
@@ -294,7 +294,7 @@ export default async function ProjectCaseStudyPage({
         </section>
 
         {/* Next Project Navigator */}
-        <div className="border-t border-white/10 pt-16 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+        <div className="border-t border-border-subtle pt-16 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <span className="font-mono text-xs text-brand-muted uppercase tracking-wider">
               Subsequent Case Study

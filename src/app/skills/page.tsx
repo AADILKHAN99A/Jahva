@@ -66,7 +66,7 @@ export default function SkillsPage() {
         </div>
 
         {/* Quality Bar Callout Banner */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 rounded-3xl bg-surface-shell ring-1 ring-white/10 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 rounded-3xl bg-surface-shell ring-1 ring-border-subtle mb-24">
           <div className="flex items-start gap-4">
             <CheckSquareOffset size={28} className="text-accent shrink-0 mt-1" weight="bold" />
             <div>
@@ -111,7 +111,7 @@ export default function SkillsPage() {
 
             return (
               <section key={category.id}>
-                <div className="mb-8 pb-4 border-b border-white/10">
+                <div className="mb-8 pb-4 border-b border-border-subtle">
                   <h2 className="text-2xl sm:text-3xl font-bold text-brand-text">
                     {category.label}
                   </h2>
@@ -142,7 +142,7 @@ export default function SkillsPage() {
                           </p>
                         </div>
 
-                        <div className="pt-4 border-t border-white/10 space-y-3">
+                        <div className="pt-4 border-t border-border-subtle space-y-3">
                           {/* Specialists */}
                           <div>
                             <span className="font-mono text-[10px] uppercase text-brand-muted tracking-wider block mb-1">
@@ -180,7 +180,7 @@ export default function SkillsPage() {
                                     <Link
                                       key={project.slug}
                                       href={`/projects/${project.slug}`}
-                                      className="text-[11px] text-zinc-300 hover:text-white bg-white/5 px-2 py-0.5 rounded ring-1 ring-white/10"
+                                      className="text-[11px] text-brand-secondary hover:text-brand-text bg-canvas-base px-2 py-0.5 rounded ring-1 ring-border-subtle"
                                     >
                                       {project.title}
                                     </Link>

@@ -47,10 +47,10 @@ export function AmbientCanvas() {
     const geometry = new THREE.PlaneGeometry(width, height, segmentsX, segmentsY);
 
     const material = new THREE.MeshBasicMaterial({
-      color: 0xff5500, // Cadmium accent
+      color: 0x226192, // Deep Editorial Blue accent
       wireframe: true,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.45,
     });
 
     const mesh = new THREE.Mesh(geometry, material);
@@ -146,8 +146,8 @@ export function AmbientCanvas() {
 
   if (prefersReduced) {
     return (
-      <div className="relative h-full w-full rounded-3xl bg-surface-shell/50 ring-1 ring-white/10 flex items-center justify-center p-8">
-        <div className="h-48 w-48 rounded-full bg-accent/10 border border-accent/20 filter blur-xl" />
+      <div className="relative h-full w-full rounded-3xl bg-surface-shell/50 ring-1 ring-border-subtle flex items-center justify-center p-8">
+        <div className="h-48 w-48 rounded-full bg-accent/15 border border-accent/30 filter blur-xl" />
       </div>
     );
   }
@@ -155,7 +155,7 @@ export function AmbientCanvas() {
   return (
     <div
       ref={mountRef}
-      className="relative h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl overflow-hidden bg-surface-shell/40 ring-1 ring-white/10"
+      className="relative h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl overflow-hidden bg-surface-shell/50 ring-1 ring-border-subtle"
       aria-label="Interactive procedural WebGL wireframe canvas"
     />
   );

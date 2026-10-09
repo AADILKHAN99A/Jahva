@@ -1,31 +1,31 @@
 :root {
-  /* Canvas & Background Surfaces */
-  --color-canvas-base: #09090b;
-  --color-canvas-subtle: #0f0f12;
-  --color-surface-shell: #18181b;
-  --color-surface-core: #121215;
-  --color-surface-elevated: #202025;
+  /* Canvas & Background Surfaces (Warm Ivory Triad) */
+  --color-canvas-base: #EAE6DE;
+  --color-canvas-subtle: #E1DDD4;
+  --color-surface-shell: #D8D2C6;
+  --color-surface-core: #F4F0E8;
+  --color-surface-elevated: #EDE9E1;
 
-  /* Structural Hairlines & Borders */
-  --color-border-subtle: rgba(255, 255, 255, 0.08);
-  --color-border-visible: rgba(255, 255, 255, 0.14);
-  --color-border-focus: rgba(255, 85, 0, 0.65);
+  /* Structural Hairlines & Borders (Deep Editorial Blue Tinted) */
+  --color-border-subtle: rgba(34, 97, 146, 0.16);
+  --color-border-visible: rgba(34, 97, 146, 0.28);
+  --color-border-focus: #226192;
 
-  /* Typography Colors */
-  --color-text-primary: #fafafa;
-  --color-text-secondary: #a1a1aa;
-  --color-text-muted: #71717a;
-  --color-text-inverse: #09090b;
+  /* Typography Colors (Deep Editorial Navy & Blue) */
+  --color-text-primary: #12283A;
+  --color-text-secondary: #226192;
+  --color-text-muted: #556E84;
+  --color-text-inverse: #FFFFFF;
 
-  /* Single Locked Accent: Safety Cadmium Orange */
-  --color-accent-primary: #ff5500;
-  --color-accent-subtle: rgba(255, 85, 0, 0.12);
-  --color-accent-glow: rgba(255, 85, 0, 0.25);
+  /* Single Locked Accent: Coral Orange */
+  --color-accent-primary: #EF8557;
+  --color-accent-subtle: rgba(239, 133, 87, 0.18);
+  --color-accent-glow: rgba(239, 133, 87, 0.35);
 
   /* Status Tokens */
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
+  --color-success: #0d9488;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
 
   /* Fonts */
   --font-display: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;

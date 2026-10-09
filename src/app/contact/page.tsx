@@ -85,7 +85,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-accent"
+                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-border-subtle focus:outline-none focus:ring-2 focus:ring-accent"
                         placeholder="Elena Vance"
                       />
                     </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
                         }
-                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-accent"
+                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-border-subtle focus:outline-none focus:ring-2 focus:ring-accent"
                         placeholder="elena@company.com"
                       />
                     </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                             organization: e.target.value,
                           })
                         }
-                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-accent"
+                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-border-subtle focus:outline-none focus:ring-2 focus:ring-accent"
                         placeholder="Aura Acoustics"
                       />
                     </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, budget: e.target.value })
                         }
-                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-accent"
+                        className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-border-subtle focus:outline-none focus:ring-2 focus:ring-accent"
                       >
                         <option value="€25k - €40k">€25k - €40k</option>
                         <option value="€40k - €70k">€40k - €70k</option>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-accent"
+                      className="w-full rounded-xl bg-surface-shell px-4 py-3 text-sm text-brand-text ring-1 ring-border-subtle focus:outline-none focus:ring-2 focus:ring-accent"
                       placeholder="Outline your vision, technical hurdles, desired timeline, and key performance expectations..."
                     />
                   </div>

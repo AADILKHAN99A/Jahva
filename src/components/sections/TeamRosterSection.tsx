@@ -46,7 +46,7 @@ export function TeamRosterSection({ members }: TeamRosterSectionProps) {
               <div className="flex flex-col h-full justify-between">
                 <div>
                   {/* Portrait Media */}
-                  <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-white/10">
+                  <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-6 bg-surface-shell ring-1 ring-border-subtle">
                     <Image
                       src={member.avatarUrl}
                       alt={member.name}
@@ -79,7 +79,7 @@ export function TeamRosterSection({ members }: TeamRosterSectionProps) {
                 </div>
 
                 {/* Footer Details: Disciplines & Project count */}
-                <div className="pt-4 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-brand-muted">
+                <div className="pt-4 border-t border-border-subtle flex items-center justify-between text-[11px] font-mono text-brand-muted">
                   <TechnicalBadge size="sm">
                     {member.disciplines[0]}
                   </TechnicalBadge>
