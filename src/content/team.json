@@ -1,0 +1,194 @@
+[
+  {
+    "id": "elena-vance",
+    "name": "Elena Vance",
+    "role": "Lead Creative Technologist",
+    "title": "Shader Architect & Interaction Engineer",
+    "location": "Berlin, Germany",
+    "bio": "Specializing in procedural GLSL shaders, WebGL performance tuning, and interactive typography. Elena previously engineered interactive museum installations across Europe before co-founding Kinetic Atelier.",
+    "philosophy": "Shaders are not decorative filters; they are dynamic computational materials that bring physical weight to the digital plane.",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80",
+    "disciplines": [
+      "Procedural GLSL",
+      "WebGL & Three.js",
+      "Interactive Audio",
+      "Mathematical Physics"
+    ],
+    "skills": ["webgl", "threejs", "glsl", "gsap", "webaudio"],
+    "flagshipProjects": ["aura-spatial-audio", "hyperion-compute"],
+    "individualProjects": [
+      {
+        "id": "chroma-ray-engine",
+        "title": "ChromaRay GLSL",
+        "description": "An open source procedural volumetric raymarcher rendering complex SDF fractals directly in WebGL2 at 60fps.",
+        "year": "2024",
+        "role": "Author & Maintainer",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["GLSL", "Raymarching", "SDF", "WebGL2"],
+        "previewImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "topo-mesh-lab",
+        "title": "Topological Noise Playground",
+        "description": "Interactive procedural terrain generator exploring Simplex vector displacement and dynamic normal mapping in React Three Fiber.",
+        "year": "2023",
+        "role": "Solo Experiment",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Three.js", "Noise Algorithms", "Math"],
+        "previewImage": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80"
+      }
+    ],
+    "links": {
+      "github": "https://github.com",
+      "readcv": "https://read.cv",
+      "x": "https://x.com",
+      "email": "elena@kineticatelier.dev"
+    }
+  },
+  {
+    "id": "marcus-thorne",
+    "name": "Marcus Thorne",
+    "role": "Principal Systems Architect",
+    "title": "Performance Lead & Distributed Systems Specialist",
+    "location": "London, UK",
+    "bio": "Obsessed with frame-budget enforcement, zero layout shifts, and server-component performance. Marcus has spent 12 years building low-latency trading interfaces and modern distributed web platforms.",
+    "philosophy": "A 100 millisecond delay is an architectural failure. Beauty is meaningless if the interface stutters under user interaction.",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+    "disciplines": [
+      "Next.js RSC Architecture",
+      "WebAssembly & Rust Interop",
+      "Core Web Vitals Engineering",
+      "Edge Infrastructure"
+    ],
+    "skills": ["nextjs", "typescript", "rust", "wasm", "node"],
+    "flagshipProjects": ["hyperion-compute", "voxel-protocol"],
+    "individualProjects": [
+      {
+        "id": "zero-shift-profiler",
+        "title": "ZeroShift CLI",
+        "description": "Automated headless Chromium tool for detecting layout shifts down to fractional sub-pixels during simulated mobile network throttling.",
+        "year": "2024",
+        "role": "Creator",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Rust", "Performance", "DevTools"],
+        "previewImage": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "hyper-cache-kv",
+        "title": "Edge KV Streamer",
+        "description": "Minimalist high-throughput distributed memory cache client for Cloudflare Workers and Vercel Edge functions.",
+        "year": "2023",
+        "role": "Solo Project",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["TypeScript", "Edge Runtime", "Cache"],
+        "previewImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+      }
+    ],
+    "links": {
+      "github": "https://github.com",
+      "readcv": "https://read.cv",
+      "x": "https://x.com",
+      "email": "marcus@kineticatelier.dev"
+    }
+  },
+  {
+    "id": "siobhan-kelly",
+    "name": "Siobhan Kelly",
+    "role": "Design Director",
+    "title": "Interface Choreographer & Type System Designer",
+    "location": "Dublin, Ireland",
+    "bio": "Bridging Swiss typography with cinematic spatial UI. Siobhan trained in physical publication design before transitioning into digital motion systems and accessible design engineering.",
+    "philosophy": "Good design is structural clarity; memorable design is calibrated friction and unexpected physical tactility.",
+    "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+    "disciplines": [
+      "Editorial Design Systems",
+      "Motion Choreography",
+      "WCAG AAA Accessibility",
+      "Micro-interaction Physics"
+    ],
+    "skills": ["design-systems", "tailwind", "gsap", "accessibility", "token-engineering"],
+    "flagshipProjects": ["kroma-studio-os", "aura-spatial-audio"],
+    "individualProjects": [
+      {
+        "id": "typographic-gravity",
+        "title": "Typographic Gravity Spec",
+        "description": "Experimental kinetic typography system where font weight and letter spacing dynamically deform based on scroll momentum and device tilt.",
+        "year": "2024",
+        "role": "Designer & Developer",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Variable Fonts", "Physics", "Motion"],
+        "previewImage": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "machined-tokens",
+        "title": "Machined Token UI",
+        "description": "Zero runtime CSS token generator creating physical double-bezel chamfers and inset specular highlights for web interfaces.",
+        "year": "2023",
+        "role": "Author",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Design Tokens", "CSS Architecture"],
+        "previewImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1200&q=80"
+      }
+    ],
+    "links": {
+      "github": "https://github.com",
+      "readcv": "https://read.cv",
+      "x": "https://x.com",
+      "email": "siobhan@kineticatelier.dev"
+    }
+  },
+  {
+    "id": "tariq-al-mansoor",
+    "name": "Tariq Al-Mansoor",
+    "role": "Full-Stack Creative Engineer",
+    "title": "Canvas Architect & Protocol Integrator",
+    "location": "Dubai, UAE",
+    "bio": "Crafting resilient real-time web applications and high-fidelity 2D/3D visualizers. Tariq combines deep browser networking with tactile graphics and generative canvas drawing.",
+    "philosophy": "Every interactive state must acknowledge the user like a finely tuned instrument, with zero latency and absolute predictability.",
+    "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    "disciplines": [
+      "Real-time WebSockets",
+      "Canvas 2D & WebGL",
+      "Full-Stack TypeScript",
+      "State Machine Architecture"
+    ],
+    "skills": ["typescript", "threejs", "node", "canvas", "state-machines"],
+    "flagshipProjects": ["voxel-protocol", "kroma-studio-os"],
+    "individualProjects": [
+      {
+        "id": "vector-forge-canvas",
+        "title": "VectorForge Infinite Canvas",
+        "description": "Infinite canvas rendering engine utilizing spatial QuadTrees and offscreen canvas workers for smooth pan and zoom with 50,000 vector primitives.",
+        "year": "2024",
+        "role": "Lead Architect",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Canvas API", "QuadTree", "Web Workers"],
+        "previewImage": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "audio-mesh-synthesizer",
+        "title": "AudioMesh Synthesizer",
+        "description": "Browser-based additive synthesizer mapping spatial 3D geometry to real-time harmonic FM frequency modulation via the Web Audio API.",
+        "year": "2023",
+        "role": "Creator",
+        "liveUrl": "https://github.com",
+        "repoUrl": "https://github.com",
+        "tags": ["Web Audio", "Three.js", "Synthesizer"],
+        "previewImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80"
+      }
+    ],
+    "links": {
+      "github": "https://github.com",
+      "readcv": "https://read.cv",
+      "x": "https://x.com",
+      "email": "tariq@kineticatelier.dev"
+    }
+  }
+]

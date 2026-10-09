@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "aura-spatial-audio",
+    "title": "Aura Spatial Audio",
+    "subtitle": "Interactive WebGL soundfield visualizer and real-time DSP acoustic workstation",
+    "category": "WebGL / Audio Engineering",
+    "year": "2024",
+    "client": "Aura Acoustics Inc.",
+    "sector": "Acoustic Hardware & Software",
+    "liveUrl": "https://aura-audio.example.com",
+    "heroImage": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=80",
+    "overview": "Aura tasked Kinetic Atelier with engineering an in-browser spatial audio acoustic studio that allows sound designers to test 3D binaural reverberation in virtual architectural rooms directly inside Chromium and WebKit.",
+    "challenge": "Rendering 60fps real-time raytraced audio reflections alongside an interactive 3D mesh visualizer while maintaining audio thread latency strictly below 10 milliseconds without dropouts.",
+    "solution": "We segregated the audio DSP engine into dedicated background AudioWorklets running optimized WebAssembly filters, while the visualizer utilizes custom GLSL vertex shaders to deform room boundaries based on frequency spectrum analysis.",
+    "results": [
+      {
+        "metric": "8.2ms",
+        "label": "Round-trip audio buffer latency"
+      },
+      {
+        "metric": "60fps",
+        "label": "Stable frame rate during complex room morphing"
+      },
+      {
+        "metric": "100%",
+        "label": "Offline capability via Progressive Web App"
+      }
+    ],
+    "technologies": ["webgl", "threejs", "glsl", "webaudio", "gsap"],
+    "contributors": ["elena-vance", "siobhan-kelly"],
+    "artifacts": [
+      {
+        "title": "Acoustic Impulse Response Visualizer",
+        "description": "Real-time FFT spectrogram rendering sound decay across 3D room geometries.",
+        "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Spatial Node Orchestrator",
+        "description": "Tactile draggable 3D audio emitter nodes with distance attenuation falloffs.",
+        "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  {
+    "slug": "hyperion-compute",
+    "title": "Hyperion Compute",
+    "subtitle": "High-throughput telemetry dashboard and cluster monitoring console",
+    "category": "Systems Architecture",
+    "year": "2024",
+    "client": "Hyperion Distributed Systems",
+    "sector": "Cloud Infrastructure",
+    "liveUrl": "https://hyperion-compute.example.com",
+    "heroImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80",
+    "overview": "Hyperion needed a mission-critical web dashboard capable of streaming live telemetry from 10,000 edge nodes with sub-second visual updates, zero UI freezing, and instant drill-down diagnostics.",
+    "challenge": "Preventing DOM garbage collection pauses and React re-render thrashing when ingesting 100,000 metrics per second over encrypted WebSockets.",
+    "solution": "Architected using Next.js Server Components for layout scaffolding, paired with an offscreen Canvas 2D WebGL telemetry engine. Memory is managed via flat ArrayBuffers, bypassing React state lifecycles completely for the live data feed.",
+    "results": [
+      {
+        "metric": "0.00",
+        "label": "Cumulative Layout Shift (CLS)"
+      },
+      {
+        "metric": "120k",
+        "label": "Events processed per second on a single thread"
+      },
+      {
+        "metric": "98/100",
+        "label": "Google Lighthouse Performance rating"
+      }
+    ],
+    "technologies": ["nextjs", "typescript", "rust", "tailwind", "node", "webgl"],
+    "contributors": ["marcus-thorne", "elena-vance"],
+    "artifacts": [
+      {
+        "title": "Cluster Health Topography",
+        "description": "Sub-pixel vector matrix rendering real-time cluster memory pressure.",
+        "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Trace Timeline Inspector",
+        "description": "High-density micro-second waterfall timeline visualizing distributed RPC spans.",
+        "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  {
+    "slug": "voxel-protocol",
+    "title": "Voxel Protocol",
+    "subtitle": "Decentralized 3D geometry exchange and procedural asset validator",
+    "category": "Spatial 3D / WebAssembly",
+    "year": "2023",
+    "client": "Voxel Foundation",
+    "sector": "Digital Spatial Standards",
+    "liveUrl": "https://voxel-protocol.example.com",
+    "heroImage": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1600&q=80",
+    "overview": "A decentralized open-standard repository and real-time browser inspection playground for algorithmic 3D geometry, polygon decimation, and cryptographic mesh provenance.",
+    "challenge": "Parsing, hashing, and verifying multi-gigabyte glTF and binary mesh archives inside the browser sandbox without crashing memory-constrained mobile devices.",
+    "solution": "Engineered a streaming WebAssembly pipeline compiled from Rust that unpacks and validates mesh topologies in parallel chunks via Web Workers before transferring geometry directly to GPU memory.",
+    "results": [
+      {
+        "metric": "4.2x",
+        "label": "Faster mesh decompression compared to JavaScript"
+      },
+      {
+        "metric": "18MB",
+        "label": "Peak memory footprint during 200MB file inspection"
+      },
+      {
+        "metric": "100%",
+        "label": "Cryptographic mesh validation accuracy"
+      }
+    ],
+    "technologies": ["threejs", "rust", "wasm", "typescript", "state-machines"],
+    "contributors": ["tariq-al-mansoor", "marcus-thorne"],
+    "artifacts": [
+      {
+        "title": "Geometry Topology Wireframe Inspector",
+        "description": "Real-time non-manifold edge detection and normal visualization tool.",
+        "imageUrl": "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Binary Chunk Streamer",
+        "description": "Visualizing WebAssembly memory allocation and streaming buffer states.",
+        "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  {
+    "slug": "kroma-studio-os",
+    "title": "Kroma Studio OS",
+    "subtitle": "Real-time collaborative publication canvas and design token design system",
+    "category": "Interface Architecture",
+    "year": "2023",
+    "client": "Kroma Media Lab",
+    "sector": "Creative Software",
+    "liveUrl": "https://kroma-studio.example.com",
+    "heroImage": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1600&q=80",
+    "overview": "A collaborative multi-player design workspace tailored for high-end fashion and architectural publications, merging editorial precision with multiplayer presence.",
+    "challenge": "Delivering pixel-perfect typography controls, dynamic baseline grids, and instant multiplayer synchronization across complex multi-column responsive editorial spreads.",
+    "solution": "Built on an custom infinite 2D canvas with localized QuadTree spatial indexing. Designed a machined token system enforcing strict WCAG AAA contrast and haptic tactile feedback.",
+    "results": [
+      {
+        "metric": "16ms",
+        "label": "Multiplayer cursor synchronization latency"
+      },
+      {
+        "metric": "AAA",
+        "label": "WCAG contrast rating achieved across all theme tokens"
+      },
+      {
+        "metric": "60fps",
+        "label": "Smooth pinch and zoom across 100 artboards"
+      }
+    ],
+    "technologies": ["canvas", "design-systems", "tailwind", "gsap", "accessibility", "token-engineering"],
+    "contributors": ["siobhan-kelly", "tariq-al-mansoor"],
+    "artifacts": [
+      {
+        "title": "Baseline Grid Alignment Engine",
+        "description": "Interactive typographic ruler with sub-pixel snapping and optical kerning.",
+        "imageUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "title": "Double-Bezel Component Library",
+        "description": "Machined control surfaces and sliders with physical tactile feedback.",
+        "imageUrl": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  }
+]

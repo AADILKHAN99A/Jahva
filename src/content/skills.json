@@ -1,0 +1,146 @@
+[
+  {
+    "id": "webgl",
+    "name": "WebGL & Procedural Shaders",
+    "category": "creative-dev",
+    "mastery": "specialist",
+    "description": "Custom GLSL vertex and fragment shaders, post-processing pipelines, FBO ping-pong simulation, and GPGPU computing.",
+    "memberIds": ["elena-vance", "tariq-al-mansoor"],
+    "projectSlugs": ["aura-spatial-audio", "hyperion-compute"]
+  },
+  {
+    "id": "threejs",
+    "name": "Three.js & Spatial Web",
+    "category": "spatial-3d",
+    "mastery": "specialist",
+    "description": "Procedural buffer geometries, instanced rendering, physical lighting, MatCap optimizations, and React Three Fiber integration.",
+    "memberIds": ["elena-vance", "tariq-al-mansoor"],
+    "projectSlugs": ["aura-spatial-audio", "voxel-protocol"]
+  },
+  {
+    "id": "glsl",
+    "name": "GLSL Vector & Noise Math",
+    "category": "creative-dev",
+    "mastery": "specialist",
+    "description": "Simplex noise distortion, signed distance fields (SDF), chromatic dispersion, and raymarching mathematics on the GPU.",
+    "memberIds": ["elena-vance"],
+    "projectSlugs": ["aura-spatial-audio", "hyperion-compute"]
+  },
+  {
+    "id": "gsap",
+    "name": "GSAP & Motion Choreography",
+    "category": "interface",
+    "mastery": "core",
+    "description": "ScrollTrigger pinned timelines, scrubbed layout morphs, magnetic pointer physics, and hardware-accelerated transforms.",
+    "memberIds": ["elena-vance", "siobhan-kelly"],
+    "projectSlugs": ["aura-spatial-audio", "kroma-studio-os", "hyperion-compute"]
+  },
+  {
+    "id": "webaudio",
+    "name": "Web Audio Synthesis & Spatial DSP",
+    "category": "creative-dev",
+    "mastery": "advanced",
+    "description": "Real-time FFT audio analysis, custom AudioWorklets, spatial binaural panning, and harmonic synthesis pipelines.",
+    "memberIds": ["elena-vance", "tariq-al-mansoor"],
+    "projectSlugs": ["aura-spatial-audio"]
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js & Server Components",
+    "category": "systems",
+    "mastery": "core",
+    "description": "React Server Components architecture, static pre-rendering, edge rendering, bundle optimization, and zero layout shift.",
+    "memberIds": ["marcus-thorne"],
+    "projectSlugs": ["hyperion-compute", "voxel-protocol", "kroma-studio-os"]
+  },
+  {
+    "id": "typescript",
+    "name": "Strict TypeScript & Type Systems",
+    "category": "systems",
+    "mastery": "core",
+    "description": "Type-safe schemas, Zod validation, generic algebraic data structures, and contract-driven API clients.",
+    "memberIds": ["marcus-thorne", "tariq-al-mansoor"],
+    "projectSlugs": ["hyperion-compute", "voxel-protocol", "kroma-studio-os"]
+  },
+  {
+    "id": "rust",
+    "name": "Rust & WebAssembly",
+    "category": "systems",
+    "mastery": "advanced",
+    "description": "High-throughput binary computing in the browser, SIMD acceleration, and memory-safe compute kernels.",
+    "memberIds": ["marcus-thorne"],
+    "projectSlugs": ["voxel-protocol", "hyperion-compute"]
+  },
+  {
+    "id": "wasm",
+    "name": "WebAssembly Compute Pipelines",
+    "category": "systems",
+    "mastery": "advanced",
+    "description": "Compiling low-level algorithms for sub-millisecond execution on the web client with direct memory sharing.",
+    "memberIds": ["marcus-thorne"],
+    "projectSlugs": ["voxel-protocol"]
+  },
+  {
+    "id": "node",
+    "name": "Distributed Node.js & Edge Workers",
+    "category": "systems",
+    "mastery": "core",
+    "description": "High-concurrency streaming servers, WebSocket clusters, Edge KV caching, and sub-second cold starts.",
+    "memberIds": ["marcus-thorne", "tariq-al-mansoor"],
+    "projectSlugs": ["hyperion-compute", "voxel-protocol"]
+  },
+  {
+    "id": "design-systems",
+    "name": "Editorial Design Systems",
+    "category": "interface",
+    "mastery": "core",
+    "description": "Scalable design token architectures, machined double-bezel primitives, and harmonious typographic scales.",
+    "memberIds": ["siobhan-kelly"],
+    "projectSlugs": ["kroma-studio-os", "aura-spatial-audio"]
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS & Token Architecture",
+    "category": "interface",
+    "mastery": "core",
+    "description": "CSS custom property binding, zero-runtime utility styling, and systematic component composition.",
+    "memberIds": ["siobhan-kelly", "marcus-thorne"],
+    "projectSlugs": ["kroma-studio-os", "hyperion-compute", "aura-spatial-audio"]
+  },
+  {
+    "id": "accessibility",
+    "name": "WCAG AA / AAA Accessibility",
+    "category": "interface",
+    "mastery": "specialist",
+    "description": "Semantic screen reader trees, keyboard focus trapping, high-contrast certification, and reduced motion safety.",
+    "memberIds": ["siobhan-kelly"],
+    "projectSlugs": ["kroma-studio-os", "hyperion-compute"]
+  },
+  {
+    "id": "token-engineering",
+    "name": "Token Engineering & Micro-Physics",
+    "category": "interface",
+    "mastery": "advanced",
+    "description": "Physical spring calibrations, haptic tactile states, and machined bevel refraction calculations.",
+    "memberIds": ["siobhan-kelly"],
+    "projectSlugs": ["kroma-studio-os"]
+  },
+  {
+    "id": "canvas",
+    "name": "Canvas 2D & Spatial QuadTrees",
+    "category": "spatial-3d",
+    "mastery": "advanced",
+    "description": "Massive scale 2D graphics rendering, sub-pixel path rasterization, and spatial partitioning algorithms.",
+    "memberIds": ["tariq-al-mansoor"],
+    "projectSlugs": ["kroma-studio-os"]
+  },
+  {
+    "id": "state-machines",
+    "name": "Deterministic State Machines",
+    "category": "systems",
+    "mastery": "core",
+    "description": "XState actor models, zero invalid state transitions, and predictable asynchronous lifecycle orchestration.",
+    "memberIds": ["tariq-al-mansoor", "marcus-thorne"],
+    "projectSlugs": ["kroma-studio-os", "voxel-protocol"]
+  }
+]
