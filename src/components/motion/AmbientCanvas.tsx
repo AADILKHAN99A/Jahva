@@ -4,11 +4,15 @@ import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 
+export interface AmbientCanvasProps {
+  className?: string;
+}
+
 /**
  * AmbientCanvas renders a lightweight procedural WebGL wireframe plane
  * that reacts organically to pointer coordinates and pauses when offscreen.
  */
-export function AmbientCanvas() {
+export function AmbientCanvas({ className }: AmbientCanvasProps = {}) {
   const mountRef = useRef<HTMLDivElement>(null);
   const prefersReduced = usePrefersReducedMotion();
 
@@ -19,15 +23,18 @@ export function AmbientCanvas() {
     let animationFrameId: number;
     let isVisible = true;
 
+    const width = container.clientWidth || window.innerWidth || 1440;
+    const height = container.clientHeight || window.innerHeight || 900;
+
     // Three.js scene setup
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       45,
-      container.clientWidth / container.clientHeight,
+      width / height,
       0.1,
       100
     );
-    camera.position.set(0, -1.8, 3.2);
+    camera.position.set(0, -1.2, 3.4);
     camera.lookAt(0, 0, 0);
 
     const renderer = new THREE.WebGLRenderer({
@@ -35,22 +42,22 @@ export function AmbientCanvas() {
       antialias: true,
       powerPreference: "high-performance",
     });
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setSize(width, height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // Procedural wavy grid geometry
-    const width = 5;
-    const height = 4;
-    const segmentsX = 40;
-    const segmentsY = 32;
-    const geometry = new THREE.PlaneGeometry(width, height, segmentsX, segmentsY);
+    // Procedural wavy grid geometry expanded to cover full viewport
+    const gridWidth = 9;
+    const gridHeight = 6;
+    const segmentsX = 52;
+    const segmentsY = 40;
+    const geometry = new THREE.PlaneGeometry(gridWidth, gridHeight, segmentsX, segmentsY);
 
     const material = new THREE.MeshBasicMaterial({
       color: 0x226192, // Deep Editorial Blue accent
       wireframe: true,
       transparent: true,
-      opacity: 0.45,
+      opacity: 0.6,
     });
 
     const mesh = new THREE.Mesh(geometry, material);
@@ -121,9 +128,11 @@ export function AmbientCanvas() {
 
     const handleResize = () => {
       if (!container) return;
-      camera.aspect = container.clientWidth / container.clientHeight;
+      const w = container.clientWidth || window.innerWidth;
+      const h = container.clientHeight || window.innerHeight;
+      camera.aspect = w / h;
       camera.updateProjectionMatrix();
-      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setSize(w, h);
     };
 
     window.addEventListener("resize", handleResize);
@@ -146,7 +155,7 @@ export function AmbientCanvas() {
 
   if (prefersReduced) {
     return (
-      <div className="relative h-full w-full rounded-3xl bg-surface-shell/50 ring-1 ring-border-subtle flex items-center justify-center p-8">
+      <div className={className ?? "relative h-full w-full rounded-3xl bg-surface-shell/50 ring-1 ring-border-subtle flex items-center justify-center p-8"}>
         <div className="h-48 w-48 rounded-full bg-accent/15 border border-accent/30 filter blur-xl" />
       </div>
     );
@@ -155,7 +164,7 @@ export function AmbientCanvas() {
   return (
     <div
       ref={mountRef}
-      className="relative h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl overflow-hidden bg-surface-shell/50 ring-1 ring-border-subtle"
+      className={className ?? "relative h-full min-h-[360px] lg:min-h-[480px] w-full rounded-3xl overflow-hidden bg-surface-shell/50 ring-1 ring-border-subtle"}
       aria-label="Interactive procedural WebGL wireframe canvas"
     />
   );
