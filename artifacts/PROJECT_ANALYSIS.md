@@ -87,8 +87,8 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
 - `PROJECTS_DATA` (4 items): Featured works portfolio items with badges and categories.
-- `TEAM_MEMBERS` (4 items): Studio directors with grayscale portrait photography:
-  1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps)
+- `TEAM_MEMBERS` (4 items): Studio directors with grayscale-to-color hover portrait photography:
+  1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps — updated authentic studio portrait at `/images/team/member-1.jpg`)
   2. FullStack Developer (Experience with Zucol, Arthonsys Technologies and Several Projects)
   3. Video Editor and 3D Artist (Experience with Professor of How)
   4. Software Developer (Experience with Serve.com, White Eudicots and Projects)
