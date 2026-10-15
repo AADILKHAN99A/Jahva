@@ -251,8 +251,76 @@ const THOUGHT_PROCESS_CARDS = [
 ];
 
 const PROJECTS_DATA = [
+  // Live Client Web Platforms (6)
   {
     id: "proj-1",
+    title: "Jaipur Gym",
+    category: "High-Performance Fitness & Strength Club",
+    image: "/images/projects/jaipur-gym.jpg",
+    url: "https://jaipurgym.com/",
+    badge: "FITNESS WEB",
+    year: "2026",
+    summary: "Full-scale digital platform for Jaipur's top-tier fitness and strength club. Engineered with high-contrast typography, membership portals, interactive facility tours, and lightning-fast performance.",
+    deliverables: ["Full-Stack Web Engineering", "High-Impact Hero Art Direction", "Membership Funnel & Booking", "Responsive Mobile Optimization"],
+  },
+  {
+    id: "proj-2",
+    title: "Blue Pottery Atelier",
+    category: "Luxury Handcrafted eCommerce & Brand Revival",
+    image: "/images/projects/blue-pottery.jpg",
+    url: "https://elegant-brand-revive-32.vercel.app/",
+    badge: "LUXURY COMMERCE",
+    year: "2026",
+    summary: "Refined digital showroom reviving Jaipur's traditional handcrafted blue pottery. Features bespoke editorial typography, tactile product staging, product enquiry workflows, and artisan storytelling.",
+    deliverables: ["Brand Identity Revival", "Editorial eCommerce Architecture", "Artisan Catalog & Product Inquiries", "Fluid Micro-Interactions"],
+  },
+  {
+    id: "proj-3",
+    title: "VRB Real Estate",
+    category: "Architectural Township & Property Developments",
+    image: "/images/projects/vrb-real-estate.jpg",
+    url: "https://vrb-real-estate.vercel.app/",
+    badge: "REAL ESTATE",
+    year: "2026",
+    summary: "Premier real estate portal showcasing master-planned townships and commercial developments across Rajasthan. Features interactive site visits, masterplan overlays, and investor relations.",
+    deliverables: ["Township Showcase Platform", "Interactive Site Visit Booking", "Project Portfolio Architecture", "High-Resolution Render Showcase"],
+  },
+  {
+    id: "proj-4",
+    title: "Tour & Travel",
+    category: "Rajasthan Heritage & Curated Excursions",
+    image: "/images/projects/tour-travel.jpg",
+    url: "https://tour-trave.vercel.app/",
+    badge: "TRAVEL & EXPEDITIONS",
+    year: "2026",
+    summary: "Immersive heritage tourism portal exploring the beauty of Rajasthan, palace expeditions, and desert safaris with seamless booking inquiries and cinematic visual storytelling.",
+    deliverables: ["Immersive Visual Direction", "Curated Expedition Catalog", "Custom Booking Inquiry System", "Dynamic Itinerary Explorer"],
+  },
+  {
+    id: "proj-5",
+    title: "Burger Signature",
+    category: "Artisan Culinary & Dining Brand Experience",
+    image: "/images/projects/burger-signature.jpg",
+    url: "https://burger-signature.vercel.app/",
+    badge: "HOSPITALITY WEB",
+    year: "2026",
+    summary: "Dark-editorial culinary showcase for an artisan craft burger kitchen. Designed with mouth-watering hero cinematography, dynamic menu explorers, and sleek cafe atmosphere presentation.",
+    deliverables: ["Culinary Art Direction", "Interactive Digital Menu", "Location & Vibe Storytelling", "High-Conversion Order CTA"],
+  },
+  {
+    id: "proj-6",
+    title: "Rajasthan Football Club",
+    category: "Premier Sports Institution & Matchday Experience",
+    image: "/images/projects/rajasthan-fc.jpg",
+    url: "https://www.rajasthanfootballclub.com",
+    badge: "SPORTS & CLUB",
+    year: "2026",
+    summary: "Official digital club portal and matchday experience for Rajasthan Football Club (The Desert Royals) at Sawai Mansingh Stadium, Jaipur. Features season membership passes, youth academy registrations, and VIP suites.",
+    deliverables: ["Club Web Portal Architecture", "Matchday Ticketing Funnel", "Academy Trial Registration", "Dynamic Fixtures & Standings"],
+  },
+  // Official Behance Portfolio Case Studies (13)
+  {
+    id: "proj-7",
     title: "Aura Chrono OS",
     category: "Glanceable Wearable UI/UX & Spatial Haptics",
     image: "/images/projects/behance/proj-1.jpg",
@@ -263,7 +331,7 @@ const PROJECTS_DATA = [
     deliverables: ["Glanceable UI Architecture", "Micro-Typography System", "OLED Dark Mode Optimization", "Tactile Micro-Haptics"],
   },
   {
-    id: "proj-2",
+    id: "proj-8",
     title: "Savison Pharma",
     category: "Pharmaceutical Brand Identity & Structural Packaging",
     image: "/images/projects/behance/proj-2.jpg",
@@ -274,7 +342,7 @@ const PROJECTS_DATA = [
     deliverables: ["Corporate Brand Mark", "Structural Packaging Design", "Retail Print Specifications", "Visual Identity Guidelines"],
   },
   {
-    id: "proj-3",
+    id: "proj-9",
     title: "Puppet & Tech Robotic Identity",
     category: "Cultural Heritage & Robotic Innovation Branding",
     image: "/images/projects/behance/proj-3.jpg",
@@ -285,7 +353,7 @@ const PROJECTS_DATA = [
     deliverables: ["Cultural Concept Narrative", "Robotic Folklore Identity", "Geometric Vector Iconography", "Spatial Exhibition Design"],
   },
   {
-    id: "proj-4",
+    id: "proj-10",
     title: "Shar Automotive Group",
     category: "Automobile Brand Engineering & Spatial Identity",
     image: "/images/projects/behance/proj-4.jpg",
@@ -296,7 +364,7 @@ const PROJECTS_DATA = [
     deliverables: ["Aerodynamic Brand Mark", "Iterative Concept Exploration", "Embossed Identity Collateral", "Automotive Showroom Signage"],
   },
   {
-    id: "proj-5",
+    id: "proj-11",
     title: "Botanical Essence & Care",
     category: "Herbal Wellness Packaging & Commercial Production",
     image: "/images/projects/behance/proj-5.jpg",
@@ -307,7 +375,7 @@ const PROJECTS_DATA = [
     deliverables: ["Commercial Art Direction", "Ayurvedic Product Packaging", "Label Typography & Hierarchy", "Retail Shelf Staging"],
   },
   {
-    id: "proj-6",
+    id: "proj-12",
     title: "Lumina Phone Commercial",
     category: "Cinematic Product Advertising & Set Architecture",
     image: "/images/projects/behance/proj-6.jpg",
@@ -318,7 +386,7 @@ const PROJECTS_DATA = [
     deliverables: ["Studio Set Architecture", "Cinematic Product Staging", "Advertising Key Visuals", "Commercial Campaign Visuals"],
   },
   {
-    id: "proj-7",
+    id: "proj-13",
     title: "Chocc's Artisanal Chocolatier",
     category: "Luxury Confectionery Packaging & Visual Identity",
     image: "/images/projects/behance/proj-7.jpg",
@@ -329,7 +397,7 @@ const PROJECTS_DATA = [
     deliverables: ["Luxury Typography System", "Custom Arch Box Architecture", "Gold Foil Emboss Detailing", "Artisanal Confectionery Identity"],
   },
   {
-    id: "proj-8",
+    id: "proj-14",
     title: "HelloFresh Ecosystem",
     category: "Interactive Tablet Experience & Digital Product Design",
     image: "/images/projects/behance/proj-8.jpg",
@@ -340,7 +408,7 @@ const PROJECTS_DATA = [
     deliverables: ["Tablet UX/UI Architecture", "Custom Digital Illustration", "Step-by-Step Cooking Mode", "Tactile Micro-Interactions"],
   },
   {
-    id: "proj-9",
+    id: "proj-15",
     title: "Tukhm — Cinematic Film Production",
     category: "Short Film Directing, Scriptwriting & Post-Production",
     image: "/images/projects/behance/proj-9.jpg",
@@ -351,7 +419,7 @@ const PROJECTS_DATA = [
     deliverables: ["Screenplay & Storyboarding", "Cinematography & Direction", "Color Grading & Foley Sound", "Film Editorial Post-Production"],
   },
   {
-    id: "proj-10",
+    id: "proj-16",
     title: "Oaty Bytes Organic Crunch",
     category: "Health Food Brand Identity & Sustainable Packaging",
     image: "/images/projects/behance/proj-10.jpg",
@@ -362,7 +430,7 @@ const PROJECTS_DATA = [
     deliverables: ["Sustainable Carton Packaging", "Artisan Brand Identity", "Commercial Ad Creative", "Social Campaign Visuals"],
   },
   {
-    id: "proj-11",
+    id: "proj-17",
     title: "Optitemp Spiral Engineering",
     category: "Industrial Thermal Dynamics & Kinetic Brand Mark",
     image: "/images/projects/behance/proj-11.jpg",
@@ -373,7 +441,7 @@ const PROJECTS_DATA = [
     deliverables: ["Turbine Spiral Identity", "Industrial Product Engineering", "Hardware Logo Specifications", "Engineering Tech Collateral"],
   },
   {
-    id: "proj-12",
+    id: "proj-18",
     title: "Florara Botanical Monograph",
     category: "Editorial Print Publication & Botanical Typography",
     image: "/images/projects/behance/proj-12.jpg",
@@ -384,7 +452,7 @@ const PROJECTS_DATA = [
     deliverables: ["Editorial Publication Grid", "Custom Editorial Typography", "Tactile Matte Print Finishes", "Botanical Art Direction"],
   },
   {
-    id: "proj-13",
+    id: "proj-19",
     title: "Oh Gaga Comic Chronicles",
     category: "Illustrated Narrative Graphic Novel & Print Design",
     image: "/images/projects/behance/proj-13.jpg",
@@ -393,17 +461,6 @@ const PROJECTS_DATA = [
     year: "2026",
     summary: "Dynamic illustrated graphic novel and collectible book design featuring hand-inked comic illustrations, expressive kinetic typography, cover embossing, and structural publication binding.",
     deliverables: ["Hand-Inked Graphic Illustration", "Custom Comic Cover Lettering", "Sequential Narrative Paneling", "Print Binding & Production"],
-  },
-  {
-    id: "proj-14",
-    title: "Rajasthan Football Club",
-    category: "Premier Sports Institution & Matchday Experience",
-    image: "/images/projects/rajasthan-fc.jpg",
-    url: "https://www.rajasthanfootballclub.com",
-    badge: "SPORTS & CLUB",
-    year: "2026",
-    summary: "Official digital club portal and matchday experience for Rajasthan Football Club (The Desert Royals) at Sawai Mansingh Stadium, Jaipur. Features season membership passes, youth academy registrations, and VIP suites.",
-    deliverables: ["Club Web Portal Architecture", "Matchday Ticketing Funnel", "Academy Trial Registration", "Dynamic Fixtures & Standings"],
   },
 ];
 

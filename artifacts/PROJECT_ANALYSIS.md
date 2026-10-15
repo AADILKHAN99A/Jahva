@@ -86,22 +86,27 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Authentic 4-screen dark purple mobile application interface (Transactions & Transfer, QR Code receiver, UPI Payment input with numeric keypad, and Financial Analytics bar charts).
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
-- `PROJECTS_DATA` (14 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features official portfolio case studies by Jahanvy Verma (Founder of Jahva) and flagship web products:
-  - **14 Portfolio Projects & Assets:**
-    1. Aura Chrono OS (`https://www.behance.net/gallery/237041775/UIUX-Design`) — Wearable UI/UX (`/images/projects/behance/proj-1.jpg`)
-    2. Savison Pharma (`https://www.behance.net/gallery/237053489/Branding-Design`) — Brand Identity & Packaging (`/images/projects/behance/proj-2.jpg`)
-    3. Puppet & Tech Robotic Identity (`https://www.behance.net/gallery/237046161/Branding-Design`) — Cultural Folklore & Tech (`/images/projects/behance/proj-3.jpg`)
-    4. Shar Automotive Group (`https://www.behance.net/gallery/237067429/Automobile-Branding-Design`) — Automobile Branding (`/images/projects/behance/proj-4.jpg`)
-    5. Botanical Essence & Care (`https://www.behance.net/gallery/213844505/Commercial-Advertisement`) — Commercial & Packaging (`/images/projects/behance/proj-5.jpg`)
-    6. Lumina Phone Commercial (`https://www.behance.net/gallery/237068613/Advertisement-Design`) — Product Advertising (`/images/projects/behance/proj-6.jpg`)
-    7. Chocc's Artisanal Chocolatier (`https://www.behance.net/gallery/197322337/Product-Packaging-Design`) — Confectionery Packaging (`/images/projects/behance/proj-7.jpg`)
-    8. HelloFresh Ecosystem (`https://www.behance.net/gallery/210732071/UIUX-Project`) — Interactive Tablet UI (`/images/projects/behance/proj-8.jpg`)
-    9. Tukhm — Cinematic Film Production (`https://www.behance.net/gallery/237060319/Editing-Film-Making`) — Film & Editorial (`/images/projects/behance/proj-9.jpg`)
-    10. Oaty Bytes Organic Crunch (`https://www.behance.net/gallery/237055757/Branding-Add-Management`) — Brand & Ad Management (`/images/projects/behance/proj-10.jpg`)
-    11. Optitemp Spiral Engineering (`https://www.behance.net/gallery/197320717/Product-Design`) — Industrial Product Design (`/images/projects/behance/proj-11.jpg`)
-    12. Florara Botanical Monograph (`https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design`) — Publication Design (`/images/projects/behance/proj-12.jpg`)
-    13. Oh Gaga Comic Chronicles (`https://www.behance.net/gallery/237064193/Comic-Book-Design`) — Graphic Novel & Print (`/images/projects/behance/proj-13.jpg`)
-    14. Rajasthan Football Club (`https://www.rajasthanfootballclub.com`) — Premier Sports Institution & Matchday Experience (`/images/projects/rajasthan-fc.jpg`)
+- `PROJECTS_DATA` (19 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features official portfolio case studies by Jahanvy Verma (Founder of Jahva) alongside client web platforms:
+  - **19 Portfolio Projects & Assets:**
+    1. Jaipur Gym (`https://jaipurgym.com/`) — Fitness Web Platform (`/images/projects/jaipur-gym.jpg`)
+    2. Blue Pottery Atelier (`https://elegant-brand-revive-32.vercel.app/`) — Luxury Handcrafted eCommerce (`/images/projects/blue-pottery.jpg`)
+    3. VRB Real Estate (`https://vrb-real-estate.vercel.app/`) — Real Estate & Townships (`/images/projects/vrb-real-estate.jpg`)
+    4. Tour & Travel (`https://tour-trave.vercel.app/`) — Heritage Travel & Expeditions (`/images/projects/tour-travel.jpg`)
+    5. Burger Signature (`https://burger-signature.vercel.app/`) — Hospitality & Dining Web (`/images/projects/burger-signature.jpg`)
+    6. Rajasthan Football Club (`https://www.rajasthanfootballclub.com`) — Premier Sports Institution & Club Portal (`/images/projects/rajasthan-fc.jpg`)
+    7. Aura Chrono OS (`https://www.behance.net/gallery/237041775/UIUX-Design`) — Wearable UI/UX (`/images/projects/behance/proj-1.jpg`)
+    8. Savison Pharma (`https://www.behance.net/gallery/237053489/Branding-Design`) — Brand Identity & Packaging (`/images/projects/behance/proj-2.jpg`)
+    9. Puppet & Tech Robotic Identity (`https://www.behance.net/gallery/237046161/Branding-Design`) — Cultural Folklore & Tech (`/images/projects/behance/proj-3.jpg`)
+    10. Shar Automotive Group (`https://www.behance.net/gallery/237067429/Automobile-Branding-Design`) — Automobile Branding (`/images/projects/behance/proj-4.jpg`)
+    11. Botanical Essence & Care (`https://www.behance.net/gallery/213844505/Commercial-Advertisement`) — Commercial & Packaging (`/images/projects/behance/proj-5.jpg`)
+    12. Lumina Phone Commercial (`https://www.behance.net/gallery/237068613/Advertisement-Design`) — Product Advertising (`/images/projects/behance/proj-6.jpg`)
+    13. Chocc's Artisanal Chocolatier (`https://www.behance.net/gallery/197322337/Product-Packaging-Design`) — Confectionery Packaging (`/images/projects/behance/proj-7.jpg`)
+    14. HelloFresh Ecosystem (`https://www.behance.net/gallery/210732071/UIUX-Project`) — Interactive Tablet UI (`/images/projects/behance/proj-8.jpg`)
+    15. Tukhm — Cinematic Film Production (`https://www.behance.net/gallery/237060319/Editing-Film-Making`) — Film & Editorial (`/images/projects/behance/proj-9.jpg`)
+    16. Oaty Bytes Organic Crunch (`https://www.behance.net/gallery/237055757/Branding-Add-Management`) — Brand & Ad Management (`/images/projects/behance/proj-10.jpg`)
+    17. Optitemp Spiral Engineering (`https://www.behance.net/gallery/197320717/Product-Design`) — Industrial Product Design (`/images/projects/behance/proj-11.jpg`)
+    18. Florara Botanical Monograph (`https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design`) — Publication Design (`/images/projects/behance/proj-12.jpg`)
+    19. Oh Gaga Comic Chronicles (`https://www.behance.net/gallery/237064193/Comic-Book-Design`) — Graphic Novel & Print (`/images/projects/behance/proj-13.jpg`)
   - **Interactive Features:**
     - Clean, minimalist aesthetic (no card-top badges or bottom text overlays on the marquee cards; only full-bleed mockup visual).
     - Entire card acts as a direct link (`<a>` tag with `target="_blank"`), opening the live Behance case study directly on click.
