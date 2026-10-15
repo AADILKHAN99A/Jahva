@@ -86,8 +86,8 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Indian product designer and technologist assembling and fine-tuning an illuminated circular glass tactile prototype.
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
-- `PROJECTS_DATA` (13 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features official portfolio case studies by Jahanvy Verma (Founder of Jahva):
-  - **13 Portfolio Projects & CDN Assets:**
+- `PROJECTS_DATA` (14 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features official portfolio case studies by Jahanvy Verma (Founder of Jahva) and flagship web products:
+  - **14 Portfolio Projects & Assets:**
     1. Aura Chrono OS (`https://www.behance.net/gallery/237041775/UIUX-Design`) — Wearable UI/UX (`/images/projects/behance/proj-1.jpg`)
     2. Savison Pharma (`https://www.behance.net/gallery/237053489/Branding-Design`) — Brand Identity & Packaging (`/images/projects/behance/proj-2.jpg`)
     3. Puppet & Tech Robotic Identity (`https://www.behance.net/gallery/237046161/Branding-Design`) — Cultural Folklore & Tech (`/images/projects/behance/proj-3.jpg`)
@@ -101,6 +101,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
     11. Optitemp Spiral Engineering (`https://www.behance.net/gallery/197320717/Product-Design`) — Industrial Product Design (`/images/projects/behance/proj-11.jpg`)
     12. Florara Botanical Monograph (`https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design`) — Publication Design (`/images/projects/behance/proj-12.jpg`)
     13. Oh Gaga Comic Chronicles (`https://www.behance.net/gallery/237064193/Comic-Book-Design`) — Graphic Novel & Print (`/images/projects/behance/proj-13.jpg`)
+    14. Rajasthan Football Club (`https://www.rajasthanfootballclub.com`) — Premier Sports Institution & Matchday Experience (`/images/projects/rajasthan-fc.jpg`)
   - **Interactive Features:**
     - Clean, minimalist aesthetic (no card-top badges or bottom text overlays on the marquee cards; only full-bleed mockup visual).
     - Entire card acts as a direct link (`<a>` tag with `target="_blank"`), opening the live Behance case study directly on click.

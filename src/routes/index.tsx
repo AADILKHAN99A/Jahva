@@ -394,6 +394,17 @@ const PROJECTS_DATA = [
     summary: "Dynamic illustrated graphic novel and collectible book design featuring hand-inked comic illustrations, expressive kinetic typography, cover embossing, and structural publication binding.",
     deliverables: ["Hand-Inked Graphic Illustration", "Custom Comic Cover Lettering", "Sequential Narrative Paneling", "Print Binding & Production"],
   },
+  {
+    id: "proj-14",
+    title: "Rajasthan Football Club",
+    category: "Premier Sports Institution & Matchday Experience",
+    image: "/images/projects/rajasthan-fc.jpg",
+    url: "https://www.rajasthanfootballclub.com",
+    badge: "SPORTS & CLUB",
+    year: "2026",
+    summary: "Official digital club portal and matchday experience for Rajasthan Football Club (The Desert Royals) at Sawai Mansingh Stadium, Jaipur. Features season membership passes, youth academy registrations, and VIP suites.",
+    deliverables: ["Club Web Portal Architecture", "Matchday Ticketing Funnel", "Academy Trial Registration", "Dynamic Fixtures & Standings"],
+  },
 ];
 
 const TEAM_MEMBERS = [
@@ -1213,7 +1224,11 @@ function Index() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={`View ${project.title} on Behance`}
+                    title={
+                      project.url.includes("behance.net")
+                        ? `View ${project.title} on Behance`
+                        : `Visit ${project.title} (${project.url})`
+                    }
                     className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
@@ -1240,7 +1255,11 @@ function Index() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title={`View ${project.title} on Behance`}
+                    title={
+                      project.url.includes("behance.net")
+                        ? `View ${project.title} on Behance`
+                        : `Visit ${project.title} (${project.url})`
+                    }
                     className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
