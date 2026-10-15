@@ -86,7 +86,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Indian product designer and technologist assembling and fine-tuning an illuminated circular glass tactile prototype.
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
-- `PROJECTS_DATA` (10 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features 10 high-resolution tangible design studio mockups:
+- `PROJECTS_DATA` (10 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Cards feature minimalist full-bleed mockup photography with a single subtle circular arrow action button (`ArrowUpRight`):
   - **Row 1 (Drifts Left):**
     1. Organic Botanicals (Packaging & Industrial Design)
     2. Chocolate Collection (Luxury eCommerce & Web Architecture)
