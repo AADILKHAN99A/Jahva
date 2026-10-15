@@ -341,13 +341,13 @@ const PROJECTS_DATA = [
   },
   {
     id: "proj-9",
-    title: "Cinematic Vision & Production",
+    title: "Tukhm — Cinematic Film Production",
     category: "Short Film Directing, Scriptwriting & Post-Production",
     image: "/images/projects/behance/proj-9.jpg",
     url: "https://www.behance.net/gallery/237060319/Editing-Film-Making",
     badge: "FILM & EDITING",
     year: "2026",
-    summary: "Original narrative film production led by studio creatives. Comprehensive end-to-end creative journey spanning screenplay writing, scene blocking, cinematography, color grading, and editorial finishing.",
+    summary: "Original narrative film production 'Tukhm' led by studio creatives. Comprehensive end-to-end creative journey spanning screenplay writing, scene blocking, cinematography, color grading, and editorial finishing.",
     deliverables: ["Screenplay & Storyboarding", "Cinematography & Direction", "Color Grading & Foley Sound", "Film Editorial Post-Production"],
   },
   {

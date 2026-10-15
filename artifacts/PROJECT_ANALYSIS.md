@@ -96,7 +96,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
     6. Lumina Phone Commercial (`https://www.behance.net/gallery/237068613/Advertisement-Design`) — Product Advertising (`/images/projects/behance/proj-6.jpg`)
     7. Chocc's Artisanal Chocolatier (`https://www.behance.net/gallery/197322337/Product-Packaging-Design`) — Confectionery Packaging (`/images/projects/behance/proj-7.jpg`)
     8. HelloFresh Ecosystem (`https://www.behance.net/gallery/210732071/UIUX-Project`) — Interactive Tablet UI (`/images/projects/behance/proj-8.jpg`)
-    9. Cinematic Vision & Production (`https://www.behance.net/gallery/237060319/Editing-Film-Making`) — Film & Editorial (`/images/projects/behance/proj-9.jpg`)
+    9. Tukhm — Cinematic Film Production (`https://www.behance.net/gallery/237060319/Editing-Film-Making`) — Film & Editorial (`/images/projects/behance/proj-9.jpg`)
     10. Oaty Bytes Organic Crunch (`https://www.behance.net/gallery/237055757/Branding-Add-Management`) — Brand & Ad Management (`/images/projects/behance/proj-10.jpg`)
     11. Optitemp Spiral Engineering (`https://www.behance.net/gallery/197320717/Product-Design`) — Industrial Product Design (`/images/projects/behance/proj-11.jpg`)
     12. Florara Botanical Monograph (`https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design`) — Publication Design (`/images/projects/behance/proj-12.jpg`)
