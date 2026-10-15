@@ -230,8 +230,24 @@ body { margin: 0; font-family: var(--font-sans); }
     scale: 1;
   }
 }
+@media (max-width: 900px) {
+  .reference-page {
+    min-height: auto;
+    padding: 16px 5% 32px 5%;
+  }
+  .theme-bridge {
+    height: 32px;
+  }
+}
+
 @media (max-width: 650px) {
-  .reference-page { padding: 12px 12px 90px; }
+  .reference-page {
+    min-height: auto;
+    padding: 12px 12px 20px;
+  }
+  .theme-bridge {
+    height: 16px;
+  }
   .reference-stage { border-radius: 22px; }
   .stage-header { top: 2%; height: 20px; }
   .social-links { font-size: 4px; gap: 4px; }
@@ -243,7 +259,7 @@ body { margin: 0; font-family: var(--font-sans); }
   .menu-glyph::after { width: 6px; }
   .header-divider { height: 7px; }
   .side-labels { gap: 8px; }
-.ribbon i { flex-basis: 4px; width: 4px; height: 4px; }
+  .ribbon i { flex-basis: 4px; width: 4px; height: 4px; }
 }
 
 /* 3D Flip Card Architecture & Newspaper Detective Board Aesthetic */

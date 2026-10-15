@@ -119,8 +119,9 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 - **Design System Tokens (`@theme inline`, `:root`, `.dark`):**
   - All colors defined in `oklch` format.
   - Custom variables: `--ribbon-dark`, `--ribbon-light`, `--ribbon-ink`, `--outline-mark`.
-- **Hero Stage Container (`.reference-stage`):**
+- **Hero Stage Container (`.reference-stage` & `.reference-page`):**
   - Utilizes CSS Container Queries (`container-type: inline-size`) with `cqw` sizing units so typography and ribbons scale proportionally regardless of viewport aspect ratio.
+  - **Responsive Height Normalization:** Desktop retains full-viewport presentation, while mobile and tablet viewports (`<=900px` and `<=650px`) adapt `.reference-page` to `min-height: auto` with snug bottom padding and reduced bridge height. This eliminates dead voids beneath the hero card and pulls subsequent content seamlessly into view on handheld screens.
 - **Marquee Ribbons (`.ribbon-light`, `.ribbon-dark`):**
   - Rotated banners (-13.2deg and 44deg) continuously scrolling through `ribbon-scroll-slow` keyframes (75s and 90s).
 - **3D Card Flip (`.perspective-1000`, `.rotate-y-180`):**

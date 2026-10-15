@@ -917,7 +917,7 @@ function Index() {
       {/* Full Dark Theme Continuous Experience (Projects, Team, and Footer) */}
       <div className="bg-[#0a0d14] text-white w-full relative z-10 border-t border-white/[0.08]">
         {/* Capabilities & Thought Process Section */}
-        <section id="capabilities" className="py-18 sm:py-24 px-6 sm:px-12 max-w-7xl mx-auto">
+        <section id="capabilities" className="pt-8 pb-16 sm:py-24 px-6 sm:px-12 max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6 border-b border-white/[0.08] pb-8">
             <div className="max-w-3xl">
