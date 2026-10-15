@@ -1160,15 +1160,16 @@ function Index() {
             </div>
           </div>
 
-          {/* Single-Row Kinetic Infinite Portfolio Stream with Pause-on-Hover */}
-          <div className="relative -mx-6 sm:-mx-12 max-w-none overflow-hidden my-4">
+          {/* Dual-Row Kinetic Infinite Portfolio Showcase with Counter-Flow & Pause-on-Hover */}
+          <div className="relative -mx-6 sm:-mx-12 max-w-none overflow-hidden my-4 sm:my-6">
             <div className="projects-marquee-container">
+              {/* Row 1: Leftward drift */}
               <div className="projects-marquee-track">
-                {[...PROJECTS_DATA, ...PROJECTS_DATA].map((project, idx) => (
+                {[...PROJECTS_DATA.slice(0, 5), ...PROJECTS_DATA.slice(0, 5)].map((project, idx) => (
                   <div
-                    key={`${project.id}-${idx}`}
+                    key={`r1-${project.id}-${idx}`}
                     onClick={() => setSelectedProject(project)}
-                    className="group relative w-[320px] sm:w-[380px] md:w-[430px] aspect-[4/3] rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-2xl shrink-0 flex flex-col justify-end p-4 hover:-translate-y-2 hover:scale-[1.01]"
+                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-2xl shrink-0 flex flex-col justify-end p-3.5 sm:p-4 hover:-translate-y-2 hover:scale-[1.01]"
                   >
                     {/* Mockup Photograph */}
                     <img
@@ -1182,27 +1183,75 @@ function Index() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0d14]/90 via-[#0a0d14]/20 to-transparent pointer-events-none transition-opacity duration-500 group-hover:opacity-90" />
 
                     {/* Floating Top Badge */}
-                    <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] font-mono tracking-wider text-emerald-400 uppercase">
+                    <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] font-mono tracking-wider text-emerald-400 uppercase">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                       <span>{project.badge}</span>
                     </div>
 
                     {/* Floating Action Arrow */}
-                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-white/80 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300">
-                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <div className="absolute top-3 right-3 z-10 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-white/80 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300">
+                      <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </div>
 
                     {/* Bottom Metadata Card */}
-                    <div className="relative z-10 rounded-2xl bg-[#0a0d14]/85 backdrop-blur-md border border-white/10 p-3.5 flex items-center justify-between group-hover:border-white/30 transition-colors">
-                      <div className="pr-3 overflow-hidden">
+                    <div className="relative z-10 rounded-xl sm:rounded-2xl bg-[#0a0d14]/85 backdrop-blur-md border border-white/10 p-3 flex items-center justify-between group-hover:border-white/30 transition-colors">
+                      <div className="pr-2 overflow-hidden">
                         <span className="text-[10px] font-mono tracking-wider text-zinc-400 uppercase block truncate">
                           {project.category}
                         </span>
-                        <h3 className="text-base sm:text-lg font-normal text-white tracking-tight font-sans mt-0.5 truncate">
+                        <h3 className="text-sm sm:text-base font-normal text-white tracking-tight font-sans mt-0.5 truncate">
                           {project.title}
                         </h3>
                       </div>
-                      <span className="text-xs font-mono text-zinc-400 shrink-0">
+                      <span className="text-[11px] font-mono text-zinc-400 shrink-0">
+                        {project.year}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Row 2: Rightward counter-flow drift */}
+              <div className="projects-marquee-track-reverse mt-4 sm:mt-6">
+                {[...PROJECTS_DATA.slice(5, 10), ...PROJECTS_DATA.slice(5, 10)].map((project, idx) => (
+                  <div
+                    key={`r2-${project.id}-${idx}`}
+                    onClick={() => setSelectedProject(project)}
+                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-2xl shrink-0 flex flex-col justify-end p-3.5 sm:p-4 hover:-translate-y-2 hover:scale-[1.01]"
+                  >
+                    {/* Mockup Photograph */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
+
+                    {/* Ambient Vignette Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0d14]/90 via-[#0a0d14]/20 to-transparent pointer-events-none transition-opacity duration-500 group-hover:opacity-90" />
+
+                    {/* Floating Top Badge */}
+                    <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] font-mono tracking-wider text-emerald-400 uppercase">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span>{project.badge}</span>
+                    </div>
+
+                    {/* Floating Action Arrow */}
+                    <div className="absolute top-3 right-3 z-10 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-white/80 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300">
+                      <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
+
+                    {/* Bottom Metadata Card */}
+                    <div className="relative z-10 rounded-xl sm:rounded-2xl bg-[#0a0d14]/85 backdrop-blur-md border border-white/10 p-3 flex items-center justify-between group-hover:border-white/30 transition-colors">
+                      <div className="pr-2 overflow-hidden">
+                        <span className="text-[10px] font-mono tracking-wider text-zinc-400 uppercase block truncate">
+                          {project.category}
+                        </span>
+                        <h3 className="text-sm sm:text-base font-normal text-white tracking-tight font-sans mt-0.5 truncate">
+                          {project.title}
+                        </h3>
+                      </div>
+                      <span className="text-[11px] font-mono text-zinc-400 shrink-0">
                         {project.year}
                       </span>
                     </div>

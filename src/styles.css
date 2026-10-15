@@ -280,26 +280,37 @@ body { margin: 0; font-family: var(--font-sans); }
   background-size: 16px 16px;
 }
 
-/* Projects Kinetic Single-Row Stream with Pause on Hover */
+/* Projects Kinetic Dual-Row Stream with Pause on Hover */
 .projects-marquee-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 16px 0 36px;
+  padding: 12px 0 28px;
   mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
 .projects-marquee-track {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   width: max-content;
   will-change: transform;
-  animation: projects-scroll-row 55s linear infinite;
+  animation: projects-scroll-row 50s linear infinite;
 }
 
-/* Pause scrolling when mouse hover over them so user can patiently click on them */
-.projects-marquee-container:hover .projects-marquee-track {
+.projects-marquee-track-reverse {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  will-change: transform;
+  animation: projects-scroll-row-reverse 50s linear infinite;
+}
+
+/* Pause scrolling on hover so users can patiently inspect and click */
+.projects-marquee-container:hover .projects-marquee-track,
+.projects-marquee-container:hover .projects-marquee-track-reverse,
+.projects-marquee-track:hover,
+.projects-marquee-track-reverse:hover {
   animation-play-state: paused !important;
 }
 
@@ -312,13 +323,24 @@ body { margin: 0; font-family: var(--font-sans); }
   }
 }
 
+@keyframes projects-scroll-row-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 640px) {
   .projects-marquee-container {
     mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
   }
-  .projects-marquee-track {
-    gap: 16px;
-    animation-duration: 40s;
+  .projects-marquee-track,
+  .projects-marquee-track-reverse {
+    gap: 14px;
+    animation-duration: 42s;
   }
 }
+
