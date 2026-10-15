@@ -128,7 +128,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 ## 5. Git & GitHub Remote Configuration
 
 - **Remote Origin:** `git@github.com:AADILKHAN99A/Jahva.git` (SSH authenticated)
-- **Local Branch:** `master`
-- **Remote Branch:** `origin/main`
-- **Remote Status:** Remote branch `origin/main` was previously used for Next.js repository commits; local `master` contains the TanStack Start + Vite landing page.
+- **Active Branch:** `main` (tracking `origin/main`)
+- **Remote Status:** Up to date. Latest codebase with custom logo, favicons, updated thought-process imagery, modal dialog centering, and updated team experience is live on `origin/main`.
+
 
