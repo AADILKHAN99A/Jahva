@@ -81,7 +81,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 #### Data Collections
 - `EDITORIAL_CATEGORIES` (6 items): Strategy, Branding, Digital Product Design, Web and App Development, Motion/3D, Systems Innovation.
 - `THOUGHT_PROCESS_CARDS` (4 items): 
-  - **01 — OBSERVE (`/images/thought-process/observe.jpg`):** Indian design researcher observing human spatial interactions through architectural glass at dusk.
+  - **01 — OBSERVE (`/images/thought-process/observe.jpg`):** Studio research flatlay on smoked oak and dark slate featuring documentary field photography of everyday mobile payment users, Swiss typographic user quote cards, qualitative affinity tabs, and an emotional journey mapping journal with Rotring technical pen.
   - **02 — EXPLORE (`/images/thought-process/explore.jpg`):** High-aesthetic architectural drafting desk featuring authentic mobile app UI wireframe flow (S1: Onboarding, S2: Dashboard, S3: Transactions, S4: Payments) in precision ink on heavy textured drafting paper with Rotring technical pens.
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Authentic 4-screen dark purple mobile application interface (Transactions & Transfer, QR Code receiver, UPI Payment input with numeric keypad, and Financial Analytics bar charts).
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
