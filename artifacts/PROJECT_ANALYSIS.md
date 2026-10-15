@@ -82,7 +82,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 - `EDITORIAL_CATEGORIES` (6 items): Strategy, Branding, Digital Product Design, Web and App Development, Motion/3D, Systems Innovation.
 - `THOUGHT_PROCESS_CARDS` (4 items): 
   - **01 — OBSERVE (`/images/thought-process/observe.jpg`):** Indian design researcher observing human spatial interactions through architectural glass at dusk.
-  - **02 — EXPLORE (`/images/thought-process/explore.jpg`):** Design atelier studio drafting desk with layered sketches, axonometrics, typography specimens, and idea mapping.
+  - **02 — EXPLORE (`/images/thought-process/explore.jpg`):** High-aesthetic architectural drafting desk featuring authentic mobile app UI wireframe flow (S1: Onboarding, S2: Dashboard, S3: Transactions, S4: Payments) in precision ink on heavy textured drafting paper with Rotring technical pens.
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Indian product designer and technologist assembling and fine-tuning an illuminated circular glass tactile prototype.
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
