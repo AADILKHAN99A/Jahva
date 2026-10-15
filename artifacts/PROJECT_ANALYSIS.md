@@ -83,7 +83,7 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 - `THOUGHT_PROCESS_CARDS` (4 items): 
   - **01 — OBSERVE (`/images/thought-process/observe.jpg`):** Indian design researcher observing human spatial interactions through architectural glass at dusk.
   - **02 — EXPLORE (`/images/thought-process/explore.jpg`):** High-aesthetic architectural drafting desk featuring authentic mobile app UI wireframe flow (S1: Onboarding, S2: Dashboard, S3: Transactions, S4: Payments) in precision ink on heavy textured drafting paper with Rotring technical pens.
-  - **03 — CREATE (`/images/thought-process/create.jpg`):** Cinematic editorial monograph of a product designer holding a bezel-less flagship smartphone running the refined purple-gradient UPI payments and transactions mobile app UI over the studio workbench, with the conceptual wireframe notebook resting alongside.
+  - **03 — CREATE (`/images/thought-process/create.jpg`):** Authentic 4-screen dark purple mobile application interface (Transactions & Transfer, QR Code receiver, UPI Payment input with numeric keypad, and Financial Analytics bar charts).
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
 - `PROJECTS_DATA` (14 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Features official portfolio case studies by Jahanvy Verma (Founder of Jahva) and flagship web products:
