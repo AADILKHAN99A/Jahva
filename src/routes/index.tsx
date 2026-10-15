@@ -488,7 +488,6 @@ function Index() {
   const [selectedResult, setSelectedResult] = useState<SearchOptionKey | null>(null);
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<(typeof EDITORIAL_CATEGORIES)[0] | null>(null);
-  const [selectedProject, setSelectedProject] = useState<(typeof PROJECTS_DATA)[0] | null>(null);
 
   // Light-theme typewriter intro (4.5 seconds total, Capital J: "Jahva")
   useEffect(() => {
@@ -1209,10 +1208,13 @@ function Index() {
               {/* Row 1: Leftward drift */}
               <div className="projects-marquee-track">
                 {[...PROJECTS_DATA, ...PROJECTS_DATA].map((project, idx) => (
-                  <div
+                  <a
                     key={`r1-${project.id}-${idx}`}
-                    onClick={() => setSelectedProject(project)}
-                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01]"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`View ${project.title} on Behance`}
+                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
                     <img
@@ -1222,28 +1224,24 @@ function Index() {
                       loading="lazy"
                     />
 
-                    {/* Floating Action Arrow and Circle linking directly to live project */}
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      title={`Launch ${project.title} (${project.url})`}
-                      className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md"
-                    >
+                    {/* Floating Action Arrow and Circle */}
+                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 ))}
               </div>
 
               {/* Row 2: Rightward counter-flow drift */}
               <div className="projects-marquee-track-reverse mt-4 sm:mt-6">
                 {[...PROJECTS_DATA.slice().reverse(), ...PROJECTS_DATA.slice().reverse()].map((project, idx) => (
-                  <div
+                  <a
                     key={`r2-${project.id}-${idx}`}
-                    onClick={() => setSelectedProject(project)}
-                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01]"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={`View ${project.title} on Behance`}
+                    className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
                     <img
@@ -1253,108 +1251,15 @@ function Index() {
                       loading="lazy"
                     />
 
-                    {/* Floating Action Arrow and Circle linking directly to live project */}
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      title={`Launch ${project.title} (${project.url})`}
-                      className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md"
-                    >
+                    {/* Floating Action Arrow and Circle */}
+                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 ))}
               </div>
             </div>
           </div>
-
-          {/* Project Modal Lightbox */}
-          <Dialog
-            open={!!selectedProject}
-            onOpenChange={(open) => {
-              if (!open) setSelectedProject(null);
-            }}
-          >
-            <DialogContent className="glass-dialog bubbly-dialog max-w-2xl p-6 sm:p-8 border border-white/20 bg-[#0e1320]/95 backdrop-blur-3xl text-white rounded-3xl shadow-[0_25px_80px_rgba(0,0,0,0.85)]">
-              {selectedProject && (
-                <div className="space-y-4">
-                  <DialogHeader className="space-y-1.5 text-left">
-                    <div className="flex items-center gap-2">
-                      <span className="text-[10px] font-mono tracking-widest text-emerald-400 uppercase">
-                        {selectedProject.badge} &bull; {selectedProject.year}
-                      </span>
-                    </div>
-                    <DialogTitle className="text-2xl sm:text-3xl font-light tracking-tight text-white font-sans">
-                      {selectedProject.title}
-                    </DialogTitle>
-                    <DialogDescription className="text-xs text-zinc-400 font-sans">
-                      {selectedProject.category}
-                    </DialogDescription>
-                  </DialogHeader>
-
-                  <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[16/10] w-full relative bg-[#080c14]">
-                    <img
-                      src={selectedProject.image}
-                      alt={selectedProject.title}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[10px] font-mono text-emerald-400 uppercase">
-                      {selectedProject.badge}
-                    </div>
-                  </div>
-
-                  <p className="text-sm text-zinc-300 font-sans leading-relaxed">
-                    {selectedProject.summary}
-                  </p>
-
-                  {selectedProject.deliverables && (
-                    <div className="pt-1">
-                      <h5 className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-2">
-                        Scope &amp; Deliverables
-                      </h5>
-                      <div className="flex flex-wrap gap-1.5">
-                        {selectedProject.deliverables.map((del, dIdx) => (
-                          <span
-                            key={dIdx}
-                            className="text-xs px-2.5 py-1 rounded-lg bg-white/[0.06] border border-white/10 text-zinc-300 font-sans"
-                          >
-                            {del}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
-                    <a
-                      href={selectedProject.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-400 text-black hover:bg-emerald-300 font-sans text-xs font-medium tracking-wide transition-all shadow-md group"
-                    >
-                      <span>
-                        {selectedProject.url.includes("behance.net")
-                          ? "View Case Study on Behance"
-                          : "Launch Live Project"}
-                      </span>
-                      <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </a>
-                    <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=jahva.interested@gmail.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/10 hover:bg-white text-white hover:text-black border border-white/20 hover:border-white text-xs font-medium font-sans transition-all"
-                    >
-                      <span>Inquire About Collaboration</span>
-                      <ArrowUpRight className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-                </div>
-              )}
-            </DialogContent>
-          </Dialog>
         </section>
 
         {/* Dark Luxury Studio Footer */}

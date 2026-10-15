@@ -103,9 +103,9 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
     13. Oh Gaga Comic Chronicles (`https://www.behance.net/gallery/237064193/Comic-Book-Design`) — Graphic Novel & Print (`/images/projects/behance/proj-13.jpg`)
   - **Interactive Features:**
     - Clean, minimalist aesthetic (no card-top badges or bottom text overlays on the marquee cards; only full-bleed mockup visual).
-    - Top-right circular floating action button with `ArrowUpRight` opens the live Behance case study directly in a new tab.
-    - Clicking the card body opens the glass case-study modal dialog with high-resolution preview, summary, deliverables, and a prominent "View Case Study on Behance" button.
-    - Hovering over either marquee row pauses the scrolling animation on both rows for easy inspection and clicking.
+    - Entire card acts as a direct link (`<a>` tag with `target="_blank"`), opening the live Behance case study directly on click.
+    - Top-right circular floating action badge with `ArrowUpRight` reinforces the external launch affordance.
+    - Hovering over either marquee row pauses the scrolling animation on both rows for comfortable inspection and clicking.
 - `TEAM_MEMBERS` (4 items): Studio directors with grayscale-to-color hover portrait photography:
   1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps — updated authentic studio portrait at `/images/team/member-1.jpg`)
   2. FullStack Developer (Experience with Zucol, Arthonsys Technologies and Several Projects)
