@@ -253,35 +253,103 @@ const THOUGHT_PROCESS_CARDS = [
 const PROJECTS_DATA = [
   {
     id: "proj-1",
-    title: "Subway Vignette",
-    category: "Narrative Film & Cinematography",
-    image: "/images/projects/project-1.png",
-    badge: "FILM 01",
+    title: "Organic Botanicals",
+    category: "Tactile Packaging & Industrial Design",
+    image: "/images/projects/canister-packaging.png",
+    badge: "PACKAGING",
     year: "2026",
+    summary: "Bespoke organic canister packaging and tactile industrial design engineered with minimalist floral iconography and sustainable materials.",
+    deliverables: ["Custom Canister 3D Modeling", "Color & Material Finish (CMF)", "Brand System & Label Hierarchy", "Studio Lighting Renders"],
   },
   {
     id: "proj-2",
-    title: "The Barber’s Chronicle",
-    category: "Vintage Tone & Direction",
-    image: "/images/projects/project-2.png",
-    badge: "FILM 02",
+    title: "Chocolate Collection",
+    category: "Luxury eCommerce & Web Architecture",
+    image: "/images/projects/imac-chocolate.png",
+    badge: "DIGITAL WEB",
     year: "2026",
+    summary: "High-editorial direct-to-consumer digital commerce experience featuring rich typography, smooth transitions, and tactile product showcases.",
+    deliverables: ["Full-Stack eCommerce Storefront", "Fluid Responsive Layouts", "Editorial Art Direction", "Micro-Interactions & Cart Flow"],
   },
   {
     id: "proj-3",
-    title: "Luminescent Horizon",
-    category: "3D Animation & Visual Effects",
-    image: "/images/projects/project-3.png",
-    badge: "3D LAB 03",
-    year: "2026",
+    title: "Kinetic Apparel Lookbook",
+    category: "Fashion Visual Identity & Art Direction",
+    image: "/images/projects/apparel-branding.png",
+    badge: "BRAND IDENTITY",
+    year: "2025",
+    summary: "Minimalist streetwear and studio uniform brand system balancing contemporary silhouette photography with refined typographic branding.",
+    deliverables: ["Apparel Graphics & Emblems", "Editorial Lookbook Photography", "Garment Tag & Spec Sheets", "Studio Campaign Visuals"],
   },
   {
     id: "proj-4",
-    title: "Monolithic Geometry",
-    category: "Spatial Installation & Set Production",
-    image: "/images/projects/project-4.png",
-    badge: "STUDIO 04",
+    title: "Monolith Publication",
+    category: "Editorial Typography & Spatial Layout",
+    image: "/images/projects/tablet-editorial.jpg",
+    badge: "EDITORIAL",
+    year: "2026",
+    summary: "A tablet-first digital architectural monograph set against raw geological textures, exploring asymmetric grids and bilingual typography.",
+    deliverables: ["Tablet UX/UI Architecture", "Interactive Editorial Reader", "Custom Grid & Typography System", "3D Textured Staging"],
+  },
+  {
+    id: "proj-5",
+    title: "Illustrative Ecosystem",
+    category: "Tablet UI/UX & Interactive Design",
+    image: "/images/projects/ipad-workstation.png",
+    badge: "APP SYSTEM",
+    year: "2026",
+    summary: "Creative productivity and illustration platform tailored for tablet ergonomics with clean touch targets and intuitive gesture navigation.",
+    deliverables: ["Touch-First Interface Architecture", "Custom Illustration Library", "Design System & Tokens", "Hardware Keyboard Adaptation"],
+  },
+  {
+    id: "proj-6",
+    title: "Shar Architectural Brand",
+    category: "Embossed Identity & Print Production",
+    image: "/images/projects/luxury-stationery.png",
+    badge: "IDENTITY",
     year: "2025",
+    summary: "Monochrome luxury identity for an architectural atelier featuring custom blind debossing, tactile cotton paper stock, and sleek corporate stationery.",
+    deliverables: ["Wordmark & Monogram Design", "Stationery & Packaging Suite", "Debossing & Foil Die Specs", "Brand Guidelines Monograph"],
+  },
+  {
+    id: "proj-7",
+    title: "Savison Visual System",
+    category: "Retail Brand Experience & Packaging",
+    image: "/images/projects/paper-carrier-bag.png",
+    badge: "RETAIL BRAND",
+    year: "2026",
+    summary: "Architectural retail carrier bag and packaging identity utilizing crisp cyan geometric motifs on matte uncoated recycled craft board.",
+    deliverables: ["Geometric Identity Mark", "Retail Packaging Production", "Structural Carrier Bag Specs", "Spatial Store Visuals"],
+  },
+  {
+    id: "proj-8",
+    title: "Aura Chrono OS",
+    category: "Wearable Experience & Interface Design",
+    image: "/images/projects/smartwatch-digital.png",
+    badge: "HARDWARE UI",
+    year: "2026",
+    summary: "Ultra-condensed glanceable smartwatch interface designed for OLED displays with high-contrast data visualization and smooth micro-haptics.",
+    deliverables: ["Glanceable UI Complications", "Micro-Typography System", "OLED Power-Optimized Dark Mode", "Sensor Data Visualizations"],
+  },
+  {
+    id: "proj-9",
+    title: "Atelier Lookbook Web",
+    category: "Next-Gen Editorial Web Platform",
+    image: "/images/projects/laptop-floating.png",
+    badge: "WEB COMMERCE",
+    year: "2025",
+    summary: "High-fashion web platform integrating seamless video loops, editorial lookbooks, and razor-sharp responsive catalog browsing.",
+    deliverables: ["Responsive Web Architecture", "Motion & Transition Curves", "High-Resolution Image Delivery", "Minimalist Checkout Flow"],
+  },
+  {
+    id: "proj-10",
+    title: "Verve Mobile Studio",
+    category: "Mobile Application & Design System",
+    image: "/images/projects/mobile-devices.png",
+    badge: "MOBILE APP",
+    year: "2026",
+    summary: "Flagship mobile application interface built for fluid handheld interaction with dark-mode first design tokens and kinetic micro-animations.",
+    deliverables: ["Mobile iOS & Android Design System", "Fluid Transition Curves", "Cross-Platform Token Library", "Tactile Micro-Interactions"],
   },
 ];
 
@@ -1092,33 +1160,56 @@ function Index() {
             </div>
           </div>
 
-          {/* 2x2 Grid with identical ProfileCardVisual */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {PROJECTS_DATA.map((project) => (
-              <div
-                key={project.id}
-                onClick={() => setSelectedProject(project)}
-                className="group relative rounded-2xl overflow-hidden bg-[#131826] border border-white/[0.12] hover:border-white/30 transition-all duration-500 cursor-pointer shadow-xl p-4 sm:p-5 flex flex-col justify-between"
-              >
-                <div className="aspect-[16/9] w-full overflow-hidden relative rounded-xl mb-4">
-                  <ProfileCardVisual />
-                </div>
+          {/* Single-Row Kinetic Infinite Portfolio Stream with Pause-on-Hover */}
+          <div className="relative -mx-6 sm:-mx-12 max-w-none overflow-hidden my-4">
+            <div className="projects-marquee-container">
+              <div className="projects-marquee-track">
+                {[...PROJECTS_DATA, ...PROJECTS_DATA].map((project, idx) => (
+                  <div
+                    key={`${project.id}-${idx}`}
+                    onClick={() => setSelectedProject(project)}
+                    className="group relative w-[320px] sm:w-[380px] md:w-[430px] aspect-[4/3] rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-2xl shrink-0 flex flex-col justify-end p-4 hover:-translate-y-2 hover:scale-[1.01]"
+                  >
+                    {/* Mockup Photograph */}
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                    />
 
-                <div className="flex items-end justify-between pt-2 border-t border-white/[0.08]">
-                  <div>
-                    <span className="text-[11px] font-mono tracking-wider text-zinc-400 uppercase">
-                      {project.category}
-                    </span>
-                    <h3 className="text-lg sm:text-xl font-light text-white tracking-tight font-sans mt-0.5">
-                      {project.title}
-                    </h3>
+                    {/* Ambient Vignette Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0a0d14]/90 via-[#0a0d14]/20 to-transparent pointer-events-none transition-opacity duration-500 group-hover:opacity-90" />
+
+                    {/* Floating Top Badge */}
+                    <div className="absolute top-3.5 left-3.5 z-10 flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-[10px] font-mono tracking-wider text-emerald-400 uppercase">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span>{project.badge}</span>
+                    </div>
+
+                    {/* Floating Action Arrow */}
+                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/15 text-white/80 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300">
+                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
+
+                    {/* Bottom Metadata Card */}
+                    <div className="relative z-10 rounded-2xl bg-[#0a0d14]/85 backdrop-blur-md border border-white/10 p-3.5 flex items-center justify-between group-hover:border-white/30 transition-colors">
+                      <div className="pr-3 overflow-hidden">
+                        <span className="text-[10px] font-mono tracking-wider text-zinc-400 uppercase block truncate">
+                          {project.category}
+                        </span>
+                        <h3 className="text-base sm:text-lg font-normal text-white tracking-tight font-sans mt-0.5 truncate">
+                          {project.title}
+                        </h3>
+                      </div>
+                      <span className="text-xs font-mono text-zinc-400 shrink-0">
+                        {project.year}
+                      </span>
+                    </div>
                   </div>
-                  <div className="w-8 h-8 rounded-full bg-white/10 group-hover:bg-white text-zinc-300 group-hover:text-black flex items-center justify-center transition-all">
-                    <ArrowUpRight className="w-4 h-4" />
-                  </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
 
           {/* Project Modal Lightbox */}
@@ -1128,7 +1219,7 @@ function Index() {
               if (!open) setSelectedProject(null);
             }}
           >
-            <DialogContent className="glass-dialog bubbly-dialog max-w-xl p-6 sm:p-8 border border-white/20 bg-[#0e1320]/95 backdrop-blur-3xl text-white rounded-3xl shadow-[0_25px_80px_rgba(0,0,0,0.85)]">
+            <DialogContent className="glass-dialog bubbly-dialog max-w-2xl p-6 sm:p-8 border border-white/20 bg-[#0e1320]/95 backdrop-blur-3xl text-white rounded-3xl shadow-[0_25px_80px_rgba(0,0,0,0.85)]">
               {selectedProject && (
                 <div className="space-y-4">
                   <DialogHeader className="space-y-1.5 text-left">
@@ -1145,11 +1236,40 @@ function Index() {
                     </DialogDescription>
                   </DialogHeader>
 
-                  <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[16/9] w-full">
-                    <ProfileCardVisual />
+                  <div className="rounded-2xl overflow-hidden border border-white/10 aspect-[16/10] w-full relative bg-[#080c14]">
+                    <img
+                      src={selectedProject.image}
+                      alt={selectedProject.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[10px] font-mono text-emerald-400 uppercase">
+                      {selectedProject.badge}
+                    </div>
                   </div>
 
-                  <div className="pt-2 flex items-center justify-between">
+                  <p className="text-sm text-zinc-300 font-sans leading-relaxed">
+                    {selectedProject.summary}
+                  </p>
+
+                  {selectedProject.deliverables && (
+                    <div className="pt-1">
+                      <h5 className="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-2">
+                        Scope &amp; Deliverables
+                      </h5>
+                      <div className="flex flex-wrap gap-1.5">
+                        {selectedProject.deliverables.map((del, dIdx) => (
+                          <span
+                            key={dIdx}
+                            className="text-xs px-2.5 py-1 rounded-lg bg-white/[0.06] border border-white/10 text-zinc-300 font-sans"
+                          >
+                            {del}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                     <span className="text-xs font-mono text-zinc-400">
                       JAHVA STUDIO &bull; ARCHIVE
                     </span>

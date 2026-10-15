@@ -86,7 +86,17 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - **03 — CREATE (`/images/thought-process/create.jpg`):** Indian product designer and technologist assembling and fine-tuning an illuminated circular glass tactile prototype.
   - **04 — REFINE (`/images/thought-process/refine.jpg`):** Polished digital product UI layout on a tablet device paired with design system typography cards and tokens.
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
-- `PROJECTS_DATA` (4 items): Featured works portfolio items with badges and categories.
+- `PROJECTS_DATA` (10 items): Kinetic single-row infinite marquee showcase with pause-on-hover functionality and detailed case study lightbox modal. Features 10 high-resolution tangible design studio mockups:
+  1. Organic Botanicals (Packaging & Industrial Design)
+  2. Chocolate Collection (Luxury eCommerce & Web Architecture)
+  3. Kinetic Apparel Lookbook (Fashion Visual Identity & Art Direction)
+  4. Monolith Publication (Editorial Typography & Spatial Layout)
+  5. Illustrative Ecosystem (Tablet UI/UX & Interactive Design)
+  6. Shar Architectural Brand (Embossed Identity & Print Production)
+  7. Savison Visual System (Retail Brand Experience & Packaging)
+  8. Aura Chrono OS (Wearable Experience & Interface Design)
+  9. Atelier Lookbook Web (Next-Gen Editorial Web Platform)
+  10. Verve Mobile Studio (Mobile Application & Design System)
 - `TEAM_MEMBERS` (4 items): Studio directors with grayscale-to-color hover portrait photography:
   1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps — updated authentic studio portrait at `/images/team/member-1.jpg`)
   2. FullStack Developer (Experience with Zucol, Arthonsys Technologies and Several Projects)

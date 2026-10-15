@@ -279,3 +279,46 @@ body { margin: 0; font-family: var(--font-sans); }
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
   background-size: 16px 16px;
 }
+
+/* Projects Kinetic Single-Row Stream with Pause on Hover */
+.projects-marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 0 36px;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.projects-marquee-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  will-change: transform;
+  animation: projects-scroll-row 55s linear infinite;
+}
+
+/* Pause scrolling when mouse hover over them so user can patiently click on them */
+.projects-marquee-container:hover .projects-marquee-track {
+  animation-play-state: paused !important;
+}
+
+@keyframes projects-scroll-row {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-marquee-container {
+    mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+  }
+  .projects-marquee-track {
+    gap: 16px;
+    animation-duration: 40s;
+  }
+}
