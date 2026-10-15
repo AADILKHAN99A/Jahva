@@ -253,103 +253,58 @@ const THOUGHT_PROCESS_CARDS = [
 const PROJECTS_DATA = [
   {
     id: "proj-1",
-    title: "Organic Botanicals",
-    category: "Tactile Packaging & Industrial Design",
-    image: "/images/projects/canister-packaging.png",
-    badge: "PACKAGING",
+    title: "Jaipur Gym",
+    category: "High-Performance Fitness & Strength Club",
+    image: "/images/projects/jaipur-gym.jpg",
+    url: "https://jaipurgym.com/",
+    badge: "FITNESS WEB",
     year: "2026",
-    summary: "Bespoke organic canister packaging and tactile industrial design engineered with minimalist floral iconography and sustainable materials.",
-    deliverables: ["Custom Canister 3D Modeling", "Color & Material Finish (CMF)", "Brand System & Label Hierarchy", "Studio Lighting Renders"],
+    summary: "Full-scale digital platform for Jaipur's top-tier fitness and strength club. Engineered with high-contrast typography, membership portals, interactive facility tours, and lightning-fast performance.",
+    deliverables: ["Full-Stack Web Engineering", "High-Impact Hero Art Direction", "Membership Funnel & Booking", "Responsive Mobile Optimization"],
   },
   {
     id: "proj-2",
-    title: "Chocolate Collection",
-    category: "Luxury eCommerce & Web Architecture",
-    image: "/images/projects/imac-chocolate.png",
-    badge: "DIGITAL WEB",
+    title: "Blue Pottery Atelier",
+    category: "Luxury Handcrafted eCommerce & Brand Revival",
+    image: "/images/projects/blue-pottery.jpg",
+    url: "https://elegant-brand-revive-32.vercel.app/",
+    badge: "LUXURY COMMERCE",
     year: "2026",
-    summary: "High-editorial direct-to-consumer digital commerce experience featuring rich typography, smooth transitions, and tactile product showcases.",
-    deliverables: ["Full-Stack eCommerce Storefront", "Fluid Responsive Layouts", "Editorial Art Direction", "Micro-Interactions & Cart Flow"],
+    summary: "Refined digital showroom reviving Jaipur's traditional handcrafted blue pottery. Features bespoke editorial typography, tactile product staging, product enquiry workflows, and artisan storytelling.",
+    deliverables: ["Brand Identity Revival", "Editorial eCommerce Architecture", "Artisan Catalog & Product Inquiries", "Fluid Micro-Interactions"],
   },
   {
     id: "proj-3",
-    title: "Kinetic Apparel Lookbook",
-    category: "Fashion Visual Identity & Art Direction",
-    image: "/images/projects/apparel-branding.png",
-    badge: "BRAND IDENTITY",
-    year: "2025",
-    summary: "Minimalist streetwear and studio uniform brand system balancing contemporary silhouette photography with refined typographic branding.",
-    deliverables: ["Apparel Graphics & Emblems", "Editorial Lookbook Photography", "Garment Tag & Spec Sheets", "Studio Campaign Visuals"],
+    title: "VRB Real Estate",
+    category: "Architectural Township & Property Developments",
+    image: "/images/projects/vrb-real-estate.jpg",
+    url: "https://vrb-real-estate.vercel.app/",
+    badge: "REAL ESTATE",
+    year: "2026",
+    summary: "Premier real estate portal showcasing master-planned townships and commercial developments across Rajasthan. Features interactive site visits, masterplan overlays, and investor relations.",
+    deliverables: ["Township Showcase Platform", "Interactive Site Visit Booking", "Project Portfolio Architecture", "High-Resolution Render Showcase"],
   },
   {
     id: "proj-4",
-    title: "Monolith Publication",
-    category: "Editorial Typography & Spatial Layout",
-    image: "/images/projects/tablet-editorial.jpg",
-    badge: "EDITORIAL",
+    title: "Tour & Travel",
+    category: "Rajasthan Heritage & Curated Excursions",
+    image: "/images/projects/tour-travel.jpg",
+    url: "https://tour-trave.vercel.app/",
+    badge: "TRAVEL & EXPEDITIONS",
     year: "2026",
-    summary: "A tablet-first digital architectural monograph set against raw geological textures, exploring asymmetric grids and bilingual typography.",
-    deliverables: ["Tablet UX/UI Architecture", "Interactive Editorial Reader", "Custom Grid & Typography System", "3D Textured Staging"],
+    summary: "Immersive heritage tourism portal exploring the beauty of Rajasthan, palace expeditions, and desert safaris with seamless booking inquiries and cinematic visual storytelling.",
+    deliverables: ["Immersive Visual Direction", "Curated Expedition Catalog", "Custom Booking Inquiry System", "Dynamic Itinerary Explorer"],
   },
   {
     id: "proj-5",
-    title: "Illustrative Ecosystem",
-    category: "Tablet UI/UX & Interactive Design",
-    image: "/images/projects/ipad-workstation.png",
-    badge: "APP SYSTEM",
+    title: "Burger Signature",
+    category: "Artisan Culinary & Dining Brand Experience",
+    image: "/images/projects/burger-signature.jpg",
+    url: "https://burger-signature.vercel.app/",
+    badge: "HOSPITALITY WEB",
     year: "2026",
-    summary: "Creative productivity and illustration platform tailored for tablet ergonomics with clean touch targets and intuitive gesture navigation.",
-    deliverables: ["Touch-First Interface Architecture", "Custom Illustration Library", "Design System & Tokens", "Hardware Keyboard Adaptation"],
-  },
-  {
-    id: "proj-6",
-    title: "Shar Architectural Brand",
-    category: "Embossed Identity & Print Production",
-    image: "/images/projects/luxury-stationery.png",
-    badge: "IDENTITY",
-    year: "2025",
-    summary: "Monochrome luxury identity for an architectural atelier featuring custom blind debossing, tactile cotton paper stock, and sleek corporate stationery.",
-    deliverables: ["Wordmark & Monogram Design", "Stationery & Packaging Suite", "Debossing & Foil Die Specs", "Brand Guidelines Monograph"],
-  },
-  {
-    id: "proj-7",
-    title: "Savison Visual System",
-    category: "Retail Brand Experience & Packaging",
-    image: "/images/projects/paper-carrier-bag.png",
-    badge: "RETAIL BRAND",
-    year: "2026",
-    summary: "Architectural retail carrier bag and packaging identity utilizing crisp cyan geometric motifs on matte uncoated recycled craft board.",
-    deliverables: ["Geometric Identity Mark", "Retail Packaging Production", "Structural Carrier Bag Specs", "Spatial Store Visuals"],
-  },
-  {
-    id: "proj-8",
-    title: "Aura Chrono OS",
-    category: "Wearable Experience & Interface Design",
-    image: "/images/projects/smartwatch-digital.png",
-    badge: "HARDWARE UI",
-    year: "2026",
-    summary: "Ultra-condensed glanceable smartwatch interface designed for OLED displays with high-contrast data visualization and smooth micro-haptics.",
-    deliverables: ["Glanceable UI Complications", "Micro-Typography System", "OLED Power-Optimized Dark Mode", "Sensor Data Visualizations"],
-  },
-  {
-    id: "proj-9",
-    title: "Atelier Lookbook Web",
-    category: "Next-Gen Editorial Web Platform",
-    image: "/images/projects/laptop-floating.png",
-    badge: "WEB COMMERCE",
-    year: "2025",
-    summary: "High-fashion web platform integrating seamless video loops, editorial lookbooks, and razor-sharp responsive catalog browsing.",
-    deliverables: ["Responsive Web Architecture", "Motion & Transition Curves", "High-Resolution Image Delivery", "Minimalist Checkout Flow"],
-  },
-  {
-    id: "proj-10",
-    title: "Verve Mobile Studio",
-    category: "Mobile Application & Design System",
-    image: "/images/projects/mobile-devices.png",
-    badge: "MOBILE APP",
-    year: "2026",
-    summary: "Flagship mobile application interface built for fluid handheld interaction with dark-mode first design tokens and kinetic micro-animations.",
-    deliverables: ["Mobile iOS & Android Design System", "Fluid Transition Curves", "Cross-Platform Token Library", "Tactile Micro-Interactions"],
+    summary: "Dark-editorial culinary showcase for an artisan craft burger kitchen. Designed with mouth-watering hero cinematography, dynamic menu explorers, and sleek cafe atmosphere presentation.",
+    deliverables: ["Culinary Art Direction", "Interactive Digital Menu", "Location & Vibe Storytelling", "High-Conversion Order CTA"],
   },
 ];
 
@@ -1165,7 +1120,7 @@ function Index() {
             <div className="projects-marquee-container">
               {/* Row 1: Leftward drift */}
               <div className="projects-marquee-track">
-                {[...PROJECTS_DATA.slice(0, 5), ...PROJECTS_DATA.slice(0, 5)].map((project, idx) => (
+                {[...PROJECTS_DATA, ...PROJECTS_DATA].map((project, idx) => (
                   <div
                     key={`r1-${project.id}-${idx}`}
                     onClick={() => setSelectedProject(project)}
@@ -1179,17 +1134,24 @@ function Index() {
                       loading="lazy"
                     />
 
-                    {/* Floating Action Arrow and Circle */}
-                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
+                    {/* Floating Action Arrow and Circle linking directly to live project */}
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      title={`Launch ${project.title} (${project.url})`}
+                      className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md"
+                    >
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </div>
+                    </a>
                   </div>
                 ))}
               </div>
 
               {/* Row 2: Rightward counter-flow drift */}
               <div className="projects-marquee-track-reverse mt-4 sm:mt-6">
-                {[...PROJECTS_DATA.slice(5, 10), ...PROJECTS_DATA.slice(5, 10)].map((project, idx) => (
+                {[...PROJECTS_DATA.slice().reverse(), ...PROJECTS_DATA.slice().reverse()].map((project, idx) => (
                   <div
                     key={`r2-${project.id}-${idx}`}
                     onClick={() => setSelectedProject(project)}
@@ -1203,10 +1165,17 @@ function Index() {
                       loading="lazy"
                     />
 
-                    {/* Floating Action Arrow and Circle */}
-                    <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
+                    {/* Floating Action Arrow and Circle linking directly to live project */}
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      title={`Launch ${project.title} (${project.url})`}
+                      className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md"
+                    >
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </div>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -1270,15 +1239,21 @@ function Index() {
                     </div>
                   )}
 
-                  <div className="pt-3 border-t border-white/10 flex items-center justify-between">
-                    <span className="text-xs font-mono text-zinc-400">
-                      JAHVA STUDIO &bull; ARCHIVE
-                    </span>
+                  <div className="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+                    <a
+                      href={selectedProject.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-400 text-black hover:bg-emerald-300 font-sans text-xs font-medium tracking-wide transition-all shadow-md group"
+                    >
+                      <span>Launch Live Website</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
                     <a
                       href="https://mail.google.com/mail/?view=cm&fs=1&to=jahva.interested@gmail.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white text-black hover:bg-zinc-200 text-xs font-medium font-sans transition-all"
+                      className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-white/10 hover:bg-white text-white hover:text-black border border-white/20 hover:border-white text-xs font-medium font-sans transition-all"
                     >
                       <span>Inquire About Collaboration</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />

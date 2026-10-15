@@ -88,17 +88,18 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
   - Interactive 3D perspective flip (`perspective-1000`, `rotate-y-180`) on hover.
 - `PROJECTS_DATA` (10 items): Kinetic dual-row infinite marquee showcase with counter-flow direction (Row 1 drifting left, Row 2 drifting right) and pause-on-hover functionality. Cards feature minimalist full-bleed mockup photography with a single subtle circular arrow action button (`ArrowUpRight`):
   - **Row 1 (Drifts Left):**
-    1. Organic Botanicals (Packaging & Industrial Design)
-    2. Chocolate Collection (Luxury eCommerce & Web Architecture)
-    3. Kinetic Apparel Lookbook (Fashion Visual Identity & Art Direction)
-    4. Monolith Publication (Editorial Typography & Spatial Layout)
-    5. Illustrative Ecosystem (Tablet UI/UX & Interactive Design)
+    1. Jaipur Gym (`https://jaipurgym.com/`) — Fitness & Performance Platform (`/images/projects/jaipur-gym.jpg`)
+    2. Blue Pottery Atelier (`https://elegant-brand-revive-32.vercel.app/`) — Heritage Craft Commerce & Archival Showcase (`/images/projects/blue-pottery.jpg`)
+    3. VRB Real Estate (`https://vrb-real-estate.vercel.app/`) — Luxury Residential & Township Development (`/images/projects/vrb-real-estate.jpg`)
+    4. Tour & Travel Destinations (`https://tour-trave.vercel.app/`) — Curated Holiday Experiences & Itinerary Booking (`/images/projects/tour-travel.jpg`)
+    5. Burger Signature (`https://burger-signature.vercel.app/`) — Artisan Culinary & Dining Brand Experience (`/images/projects/burger-signature.jpg`)
   - **Row 2 (Drifts Right / Counter-Flow):**
-    6. Shar Architectural Brand (Embossed Identity & Print Production)
-    7. Savison Visual System (Retail Brand Experience & Packaging)
-    8. Aura Chrono OS (Wearable Experience & Interface Design)
-    9. Atelier Lookbook Web (Next-Gen Editorial Web Platform)
-    10. Verve Mobile Studio (Mobile Application & Design System)
+    - Seamlessly loops the live projects in reverse order to create dynamic visual counter-flow.
+  - **Interactive Features:**
+    - Clean, minimalist aesthetic (no card-top badges or bottom text overlays on the marquee cards; only full-bleed screenshot mockup).
+    - Top-right circular floating action button with `ArrowUpRight` opens the live website directly in a new tab.
+    - Clicking the card body opens the glass case-study modal dialog with high-resolution screenshot preview, summary, deliverables, and a prominent "Launch Live Website" button.
+    - Hovering over either marquee row pauses the scrolling animation on both rows for easy inspection and clicking.
 - `TEAM_MEMBERS` (4 items): Studio directors with grayscale-to-color hover portrait photography:
   1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps — updated authentic studio portrait at `/images/team/member-1.jpg`)
   2. FullStack Developer (Experience with Zucol, Arthonsys Technologies and Several Projects)
