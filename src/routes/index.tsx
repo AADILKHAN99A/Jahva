@@ -293,7 +293,7 @@ const TEAM_MEMBERS = [
   },
   {
     role: "FullStack Developer",
-    experience: "Experience with Zucol, Urban Culture and Several Projects",
+    experience: "Experience with Zucol, Arthonsys Technologies and Several Projects",
     photo: "/images/team/member-2.jpg",
   },
   {

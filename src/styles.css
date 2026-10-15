@@ -218,16 +218,16 @@ body { margin: 0; font-family: var(--font-sans); }
 }
 
 /* Apple-style Luxury Glassmorphism Dialog & Centered Bubbly Pop Animation */
-.glass-dialog { position: fixed !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important; margin: 0 !important; max-width: min(92vw, 680px) !important; max-height: 88vh !important; overflow-y: auto !important; background: rgba(14, 19, 32, 0.92) !important; backdrop-filter: blur(48px) saturate(210%) brightness(108%) !important; -webkit-backdrop-filter: blur(48px) saturate(210%) brightness(108%) !important; border: 1px solid rgba(255, 255, 255, 0.20) !important; border-radius: 28px !important; box-shadow: 0 35px 90px -15px rgba(0, 0, 0, 0.85), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.08) !important; color: #ffffff !important; }
+.glass-dialog { position: fixed !important; top: 50% !important; left: 50% !important; translate: -50% -50% !important; transform: none !important; margin: 0 !important; max-width: min(92vw, 680px) !important; max-height: 88vh !important; overflow-y: auto !important; background: rgba(14, 19, 32, 0.92) !important; backdrop-filter: blur(48px) saturate(210%) brightness(108%) !important; -webkit-backdrop-filter: blur(48px) saturate(210%) brightness(108%) !important; border: 1px solid rgba(255, 255, 255, 0.20) !important; border-radius: 28px !important; box-shadow: 0 35px 90px -15px rgba(0, 0, 0, 0.85), inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.45), inset 0 -1px 1px 0 rgba(255, 255, 255, 0.08) !important; color: #ffffff !important; }
 .bubbly-dialog { animation: bubbly-pop-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards !important; transform-origin: center center !important; }
 @keyframes bubbly-pop-in {
   0% {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.94);
+    scale: 0.94;
   }
   100% {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    scale: 1;
   }
 }
 @media (max-width: 650px) {
