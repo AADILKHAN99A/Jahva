@@ -157,8 +157,8 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
 
 ## 5. Git & GitHub Remote Configuration
 
-- **Remote Origin:** `git@github.com:AADILKHAN99A/Jahva.git` (SSH authenticated)
+- **Remote Origin:** `git@github.com:AADILKHAN99A/jahva.git` (SSH authenticated)
 - **Active Branch:** `main` (tracking `origin/main`)
-- **Remote Status:** Up to date. Latest codebase with custom logo, favicons, updated thought-process imagery, modal dialog centering, and updated team experience is live on `origin/main`.
+- **Remote Status:** Up to date. Latest codebase with dedicated `/projects` showcase route, custom logo, favicons, updated thought-process imagery, modal dialog centering, and updated team experience is live on `origin/main`.
 
 
