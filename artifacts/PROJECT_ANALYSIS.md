@@ -107,11 +107,15 @@ src/routes/index.tsx ──► Landing Page & Interactive Stage
     17. Optitemp Spiral Engineering (`https://www.behance.net/gallery/197320717/Product-Design`) — Industrial Product Design (`/images/projects/behance/proj-11.jpg`)
     18. Florara Botanical Monograph (`https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design`) — Publication Design (`/images/projects/behance/proj-12.jpg`)
     19. Oh Gaga Comic Chronicles (`https://www.behance.net/gallery/237064193/Comic-Book-Design`) — Graphic Novel & Print (`/images/projects/behance/proj-13.jpg`)
-  - **Interactive Features:**
+  - **Interactive Features & Navigation:**
     - Clean, minimalist aesthetic (no card-top badges or bottom text overlays on the marquee cards; only full-bleed mockup visual).
-    - Entire card acts as a direct link (`<a>` tag with `target="_blank"`), opening the live Behance case study directly on click.
-    - Top-right circular floating action badge with `ArrowUpRight` reinforces the external launch affordance.
+    - Entire card acts as an internal link (`<Link to="/projects">`), opening the dedicated showcase archive page on click.
+    - Top-right circular floating action badge with `ArrowUpRight` reinforces the internal launch affordance.
+    - A dedicated **"View All Projects"** button below the marquee links to `/projects`.
     - Hovering over either marquee row pauses the scrolling animation on both rows for comfortable inspection and clicking.
+  - **Dedicated Projects Page (`/projects`):**
+    - High-end curated archive layout featuring real-time search and 6 discipline filters (All Works, Live Web & Platforms, UI/UX & Product, Brand Identity, Film & Advertising, Packaging & Print).
+    - Every project card displays full metadata (badge, title, year, category, summary, deliverable tags) and opens the live external website or Behance case study on click.
 - `TEAM_MEMBERS` (4 items): Studio directors with grayscale-to-color hover portrait photography:
   1. Creative Designer and Consultant (Founder & Experience with Urban Culture, Clystro, White Eudicots, Chetan Pumps — updated authentic studio portrait at `/images/team/member-1.jpg`)
   2. FullStack Developer (Experience with Zucol, Arthonsys Technologies and Several Projects)

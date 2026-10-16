@@ -1,5 +1,6 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
+import { PROJECTS_DATA } from "@/data/projects";
 import {
   Search,
   FolderKanban,
@@ -250,219 +251,7 @@ const THOUGHT_PROCESS_CARDS = [
   },
 ];
 
-const PROJECTS_DATA = [
-  // Live Client Web Platforms (6)
-  {
-    id: "proj-1",
-    title: "Jaipur Gym",
-    category: "High-Performance Fitness & Strength Club",
-    image: "/images/projects/jaipur-gym.jpg",
-    url: "https://jaipurgym.com/",
-    badge: "FITNESS WEB",
-    year: "2026",
-    summary: "Full-scale digital platform for Jaipur's top-tier fitness and strength club. Engineered with high-contrast typography, membership portals, interactive facility tours, and lightning-fast performance.",
-    deliverables: ["Full-Stack Web Engineering", "High-Impact Hero Art Direction", "Membership Funnel & Booking", "Responsive Mobile Optimization"],
-  },
-  {
-    id: "proj-2",
-    title: "Blue Pottery Atelier",
-    category: "Luxury Handcrafted eCommerce & Brand Revival",
-    image: "/images/projects/blue-pottery.jpg",
-    url: "https://elegant-brand-revive-32.vercel.app/",
-    badge: "LUXURY COMMERCE",
-    year: "2026",
-    summary: "Refined digital showroom reviving Jaipur's traditional handcrafted blue pottery. Features bespoke editorial typography, tactile product staging, product enquiry workflows, and artisan storytelling.",
-    deliverables: ["Brand Identity Revival", "Editorial eCommerce Architecture", "Artisan Catalog & Product Inquiries", "Fluid Micro-Interactions"],
-  },
-  {
-    id: "proj-3",
-    title: "VRB Real Estate",
-    category: "Architectural Township & Property Developments",
-    image: "/images/projects/vrb-real-estate.jpg",
-    url: "https://vrb-real-estate.vercel.app/",
-    badge: "REAL ESTATE",
-    year: "2026",
-    summary: "Premier real estate portal showcasing master-planned townships and commercial developments across Rajasthan. Features interactive site visits, masterplan overlays, and investor relations.",
-    deliverables: ["Township Showcase Platform", "Interactive Site Visit Booking", "Project Portfolio Architecture", "High-Resolution Render Showcase"],
-  },
-  {
-    id: "proj-4",
-    title: "Tour & Travel",
-    category: "Rajasthan Heritage & Curated Excursions",
-    image: "/images/projects/tour-travel.jpg",
-    url: "https://tour-trave.vercel.app/",
-    badge: "TRAVEL & EXPEDITIONS",
-    year: "2026",
-    summary: "Immersive heritage tourism portal exploring the beauty of Rajasthan, palace expeditions, and desert safaris with seamless booking inquiries and cinematic visual storytelling.",
-    deliverables: ["Immersive Visual Direction", "Curated Expedition Catalog", "Custom Booking Inquiry System", "Dynamic Itinerary Explorer"],
-  },
-  {
-    id: "proj-5",
-    title: "Burger Signature",
-    category: "Artisan Culinary & Dining Brand Experience",
-    image: "/images/projects/burger-signature.jpg",
-    url: "https://burger-signature.vercel.app/",
-    badge: "HOSPITALITY WEB",
-    year: "2026",
-    summary: "Dark-editorial culinary showcase for an artisan craft burger kitchen. Designed with mouth-watering hero cinematography, dynamic menu explorers, and sleek cafe atmosphere presentation.",
-    deliverables: ["Culinary Art Direction", "Interactive Digital Menu", "Location & Vibe Storytelling", "High-Conversion Order CTA"],
-  },
-  {
-    id: "proj-6",
-    title: "Rajasthan Football Club",
-    category: "Premier Sports Institution & Matchday Experience",
-    image: "/images/projects/rajasthan-fc.jpg",
-    url: "https://www.rajasthanfootballclub.com",
-    badge: "SPORTS & CLUB",
-    year: "2026",
-    summary: "Official digital club portal and matchday experience for Rajasthan Football Club (The Desert Royals) at Sawai Mansingh Stadium, Jaipur. Features season membership passes, youth academy registrations, and VIP suites.",
-    deliverables: ["Club Web Portal Architecture", "Matchday Ticketing Funnel", "Academy Trial Registration", "Dynamic Fixtures & Standings"],
-  },
-  // Official Behance Portfolio Case Studies (13)
-  {
-    id: "proj-7",
-    title: "Aura Chrono OS",
-    category: "Glanceable Wearable UI/UX & Spatial Haptics",
-    image: "/images/projects/behance/proj-1.jpg",
-    url: "https://www.behance.net/gallery/237041775/UIUX-Design",
-    badge: "UI/UX DESIGN",
-    year: "2026",
-    summary: "Comprehensive wearable smart interface designed for high-resolution curved OLED displays. Features glanceable complications, micro-typography hierarchy, and power-optimized dark theme interactions.",
-    deliverables: ["Glanceable UI Architecture", "Micro-Typography System", "OLED Dark Mode Optimization", "Tactile Micro-Haptics"],
-  },
-  {
-    id: "proj-8",
-    title: "Savison Pharma",
-    category: "Pharmaceutical Brand Identity & Structural Packaging",
-    image: "/images/projects/behance/proj-2.jpg",
-    url: "https://www.behance.net/gallery/237053489/Branding-Design",
-    badge: "BRAND IDENTITY",
-    year: "2026",
-    summary: "Modern medical and pharmaceutical corporate identity system, combining clean geometric cross iconography with clinical precision, structural retail bag specifications, and high-trust color palettes.",
-    deliverables: ["Corporate Brand Mark", "Structural Packaging Design", "Retail Print Specifications", "Visual Identity Guidelines"],
-  },
-  {
-    id: "proj-9",
-    title: "Puppet & Tech Robotic Identity",
-    category: "Cultural Heritage & Robotic Innovation Branding",
-    image: "/images/projects/behance/proj-3.jpg",
-    url: "https://www.behance.net/gallery/237046161/Branding-Design",
-    badge: "BRANDING DESIGN",
-    year: "2026",
-    summary: "Deeply rooted cultural brand narrative merging traditional Rajasthani puppet folklore with forward-looking robotic innovation, geometric vector iconography, and cinematic storytelling.",
-    deliverables: ["Cultural Concept Narrative", "Robotic Folklore Identity", "Geometric Vector Iconography", "Spatial Exhibition Design"],
-  },
-  {
-    id: "proj-10",
-    title: "Shar Automotive Group",
-    category: "Automobile Brand Engineering & Spatial Identity",
-    image: "/images/projects/behance/proj-4.jpg",
-    url: "https://www.behance.net/gallery/237067429/Automobile-Branding-Design",
-    badge: "AUTOMOBILE BRANDING",
-    year: "2026",
-    summary: "Dynamic automotive brand identity crafted through extensive iterative sketch studies, aerodynamic geometric logomarks, embossed stationery, and architectural showroom applications.",
-    deliverables: ["Aerodynamic Brand Mark", "Iterative Concept Exploration", "Embossed Identity Collateral", "Automotive Showroom Signage"],
-  },
-  {
-    id: "proj-11",
-    title: "Botanical Essence & Care",
-    category: "Herbal Wellness Packaging & Commercial Production",
-    image: "/images/projects/behance/proj-5.jpg",
-    url: "https://www.behance.net/gallery/213844505/Commercial-Advertisement",
-    badge: "COMMERCIAL AD",
-    year: "2025",
-    summary: "End-to-end commercial campaign production and packaging suite for herbal ayurvedic juices and wellness solutions, showcasing rich botanical graphics, typography, and product photography.",
-    deliverables: ["Commercial Art Direction", "Ayurvedic Product Packaging", "Label Typography & Hierarchy", "Retail Shelf Staging"],
-  },
-  {
-    id: "proj-12",
-    title: "Lumina Phone Commercial",
-    category: "Cinematic Product Advertising & Set Architecture",
-    image: "/images/projects/behance/proj-6.jpg",
-    url: "https://www.behance.net/gallery/237068613/Advertisement-Design",
-    badge: "ADVERTISEMENT",
-    year: "2026",
-    summary: "Cinematic smartphone advertising campaign featuring bespoke studio architectural set design with vertical fluted glass, warm architectural lighting, and immersive flagship device staging.",
-    deliverables: ["Studio Set Architecture", "Cinematic Product Staging", "Advertising Key Visuals", "Commercial Campaign Visuals"],
-  },
-  {
-    id: "proj-13",
-    title: "Chocc's Artisanal Chocolatier",
-    category: "Luxury Confectionery Packaging & Visual Identity",
-    image: "/images/projects/behance/proj-7.jpg",
-    url: "https://www.behance.net/gallery/197322337/Product-Packaging-Design",
-    badge: "PRODUCT PACKAGING",
-    year: "2025",
-    summary: "Refined luxury confectionery packaging system featuring bespoke arched typography, foil embossing, matte tactile chocolate boxes, and sensual editorial product staging.",
-    deliverables: ["Luxury Typography System", "Custom Arch Box Architecture", "Gold Foil Emboss Detailing", "Artisanal Confectionery Identity"],
-  },
-  {
-    id: "proj-14",
-    title: "HelloFresh Ecosystem",
-    category: "Interactive Tablet Experience & Digital Product Design",
-    image: "/images/projects/behance/proj-8.jpg",
-    url: "https://www.behance.net/gallery/210732071/UIUX-Project",
-    badge: "UI/UX PROJECT",
-    year: "2025",
-    summary: "Interactive culinary meal-kit tablet interface featuring playful bespoke illustrations, streamlined recipe navigation, custom calendar meal scheduling, and fluid touchscreen micro-animations.",
-    deliverables: ["Tablet UX/UI Architecture", "Custom Digital Illustration", "Step-by-Step Cooking Mode", "Tactile Micro-Interactions"],
-  },
-  {
-    id: "proj-15",
-    title: "Tukhm — Cinematic Film Production",
-    category: "Short Film Directing, Scriptwriting & Post-Production",
-    image: "/images/projects/behance/proj-9.jpg",
-    url: "https://www.behance.net/gallery/237060319/Editing-Film-Making",
-    badge: "FILM & EDITING",
-    year: "2026",
-    summary: "Original narrative film production 'Tukhm' led by studio creatives. Comprehensive end-to-end creative journey spanning screenplay writing, scene blocking, cinematography, color grading, and editorial finishing.",
-    deliverables: ["Screenplay & Storyboarding", "Cinematography & Direction", "Color Grading & Foley Sound", "Film Editorial Post-Production"],
-  },
-  {
-    id: "proj-16",
-    title: "Oaty Bytes Organic Crunch",
-    category: "Health Food Brand Identity & Sustainable Packaging",
-    image: "/images/projects/behance/proj-10.jpg",
-    url: "https://www.behance.net/gallery/237055757/Branding-Add-Management",
-    badge: "BRAND & AD MGMT",
-    year: "2026",
-    summary: "Wholesome snack brand identity and sustainable carton packaging for artisanal oat clusters, featuring clean typography, earthy floral textures, and high-conversion commercial advertising management.",
-    deliverables: ["Sustainable Carton Packaging", "Artisan Brand Identity", "Commercial Ad Creative", "Social Campaign Visuals"],
-  },
-  {
-    id: "proj-17",
-    title: "Optitemp Spiral Engineering",
-    category: "Industrial Thermal Dynamics & Kinetic Brand Mark",
-    image: "/images/projects/behance/proj-11.jpg",
-    url: "https://www.behance.net/gallery/197320717/Product-Design",
-    badge: "PRODUCT DESIGN",
-    year: "2025",
-    summary: "Kinetic visual identity and industrial product design for high-performance temperature regulation systems, built around a mathematical turbine spiral logo and precision hardware branding.",
-    deliverables: ["Turbine Spiral Identity", "Industrial Product Engineering", "Hardware Logo Specifications", "Engineering Tech Collateral"],
-  },
-  {
-    id: "proj-18",
-    title: "Florara Botanical Monograph",
-    category: "Editorial Print Publication & Botanical Typography",
-    image: "/images/projects/behance/proj-12.jpg",
-    url: "https://www.behance.net/gallery/237065229/Magazine-Design-X-Publication-Design",
-    badge: "PUBLICATION DESIGN",
-    year: "2026",
-    summary: "High-fashion botanical monograph and publication design featuring custom editorial serif typography, raw stone tactile staging, generous margins, and architectural grid layouts.",
-    deliverables: ["Editorial Publication Grid", "Custom Editorial Typography", "Tactile Matte Print Finishes", "Botanical Art Direction"],
-  },
-  {
-    id: "proj-19",
-    title: "Oh Gaga Comic Chronicles",
-    category: "Illustrated Narrative Graphic Novel & Print Design",
-    image: "/images/projects/behance/proj-13.jpg",
-    url: "https://www.behance.net/gallery/237064193/Comic-Book-Design",
-    badge: "COMIC BOOK DESIGN",
-    year: "2026",
-    summary: "Dynamic illustrated graphic novel and collectible book design featuring hand-inked comic illustrations, expressive kinetic typography, cover embossing, and structural publication binding.",
-    deliverables: ["Hand-Inked Graphic Illustration", "Custom Comic Cover Lettering", "Sequential Narrative Paneling", "Print Binding & Production"],
-  },
-];
+
 
 const TEAM_MEMBERS = [
   {
@@ -1276,16 +1065,10 @@ function Index() {
               {/* Row 1: Leftward drift */}
               <div className="projects-marquee-track">
                 {[...PROJECTS_DATA, ...PROJECTS_DATA].map((project, idx) => (
-                  <a
+                  <Link
                     key={`r1-${project.id}-${idx}`}
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={
-                      project.url.includes("behance.net")
-                        ? `View ${project.title} on Behance`
-                        : `Visit ${project.title} (${project.url})`
-                    }
+                    to="/projects"
+                    title={`Explore ${project.title} in Projects Archive`}
                     className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
@@ -1300,23 +1083,17 @@ function Index() {
                     <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
 
               {/* Row 2: Rightward counter-flow drift */}
               <div className="projects-marquee-track-reverse mt-4 sm:mt-6">
                 {[...PROJECTS_DATA.slice().reverse(), ...PROJECTS_DATA.slice().reverse()].map((project, idx) => (
-                  <a
+                  <Link
                     key={`r2-${project.id}-${idx}`}
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title={
-                      project.url.includes("behance.net")
-                        ? `View ${project.title} on Behance`
-                        : `Visit ${project.title} (${project.url})`
-                    }
+                    to="/projects"
+                    title={`Explore ${project.title} in Projects Archive`}
                     className="group relative w-[280px] sm:w-[330px] md:w-[380px] aspect-[4/3] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#111624] border border-white/[0.12] hover:border-white/40 transition-all duration-500 cursor-pointer shadow-xl shrink-0 hover:-translate-y-2 hover:scale-[1.01] block"
                   >
                     {/* Mockup Photograph */}
@@ -1331,9 +1108,20 @@ function Index() {
                     <div className="absolute top-3.5 right-3.5 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white/90 group-hover:bg-white group-hover:text-black flex items-center justify-center transition-all duration-300 shadow-md">
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
+            </div>
+
+            {/* View All Projects Button */}
+            <div className="mt-8 sm:mt-12 flex justify-center">
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white/[0.06] hover:bg-white text-zinc-200 hover:text-black border border-white/15 hover:border-white transition-all text-xs sm:text-sm font-medium font-sans shadow-xl hover:scale-105 group"
+              >
+                <span>View All Projects</span>
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </Link>
             </div>
           </div>
         </section>
