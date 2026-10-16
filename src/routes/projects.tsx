@@ -18,17 +18,17 @@ export const Route = createFileRoute("/projects")({
   component: ProjectsPage,
   head: () => ({
     meta: [
-      { title: "Selected Works & Projects — Jahva Studio" },
+      { title: "Selected Works & Projects — Jahva" },
       {
         name: "description",
         content:
-          "Comprehensive archive of live digital platforms, brand identities, UI/UX systems, and architectural packaging engineered by Jahva Studio.",
+          "Comprehensive archive of live digital platforms, brand identities, UI/UX systems, and architectural packaging engineered by Jahva.",
       },
-      { property: "og:title", content: "Selected Works & Projects — Jahva Studio" },
+      { property: "og:title", content: "Selected Works & Projects — Jahva" },
       {
         property: "og:description",
         content:
-          "Comprehensive archive of live digital platforms, brand identities, UI/UX systems, and architectural packaging engineered by Jahva Studio.",
+          "Comprehensive archive of live digital platforms, brand identities, UI/UX systems, and architectural packaging engineered by Jahva.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -140,7 +140,7 @@ function ProjectsPage() {
             </h1>
             <p className="mt-6 text-sm sm:text-base text-zinc-400 font-sans leading-relaxed max-w-2xl">
               An exhaustive archive of live production web applications, bespoke design systems, 
-              cultural brand marks, and high-fidelity product interfaces created by Jahva Studio.
+              cultural brand marks, and high-fidelity product interfaces created by Jahva.
             </p>
           </div>
 
@@ -332,7 +332,7 @@ function ProjectsPage() {
 
       {/* Clean Studio Footer */}
       <footer className="border-t border-white/[0.08] py-8 px-6 sm:px-12 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 font-sans gap-4">
-        <div>&copy; 2026 Jahva Studio. All rights reserved.</div>
+        <div>&copy; 2026 Jahva. All rights reserved.</div>
         <div className="flex items-center gap-6">
           <Link to="/" className="hover:text-white transition-colors">
             Home

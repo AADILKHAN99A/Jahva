@@ -576,7 +576,7 @@ function Index() {
                       <div className="flex flex-col">
                         <span className="text-[14px] font-normal text-white">Contact Details</span>
                         <span className="text-xs text-zinc-400">
-                          Direct studio phone line &amp; working hours
+                          Direct phone line &amp; inquiries
                         </span>
                       </div>
                     </div>
@@ -596,7 +596,7 @@ function Index() {
                       <div className="flex flex-col">
                         <span className="text-[14px] font-normal text-white">Email</span>
                         <span className="text-xs text-zinc-400">
-                          jahva.interested@gmail.com — Studio mailbox
+                          jahva.interested@gmail.com — Direct inquiries
                         </span>
                       </div>
                     </div>
@@ -640,7 +640,7 @@ function Index() {
                   <ArrowLeft className="h-3.5 w-3.5" /> Back to options
                 </Button>
                 <span className="text-xs font-mono uppercase tracking-widest text-zinc-400">
-                  {selectedResult === "about" ? "Jahva Community" : "Jahva Studio"}
+                  {selectedResult === "about" ? "Jahva Community" : "Jahva"}
                 </span>
               </div>
 
@@ -680,16 +680,12 @@ function Index() {
                   </div>
                   <div className="space-y-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm backdrop-blur-md">
                     <div>
-                      <span className="text-xs text-zinc-400">Studio Phone:</span>
+                      <span className="text-xs text-zinc-400">Phone:</span>
                       <p className="font-mono text-base font-semibold text-white">
                         <a href="tel:+919026054274" className="hover:underline text-white">
                           +91 9026054274
                         </a>
                       </p>
-                    </div>
-                    <div>
-                      <span className="text-xs text-zinc-400">Working Hours:</span>
-                      <p className="text-zinc-200">Monday – Saturday: 10:00 AM – 7:00 PM IST</p>
                     </div>
                     <div>
                       <span className="text-xs text-zinc-400">Location:</span>
@@ -1223,7 +1219,7 @@ function Index() {
 
             {/* Bottom Bar */}
             <div className="flex flex-col sm:flex-row items-center justify-between pt-6 gap-3 text-xs text-zinc-500 font-sans">
-              <div>&copy; 2026 Jahva Studio. All rights reserved.</div>
+              <div>&copy; 2026 Jahva. All rights reserved.</div>
               <div className="flex items-center gap-2">
                 <span>Jaipur, India (GMT+5:30)</span>
               </div>
