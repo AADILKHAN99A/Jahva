@@ -399,6 +399,8 @@ function Index() {
       <i />
       <span>BRANDING</span>
       <i />
+      <span>COMMUNITY</span>
+      <i />
     </>
   );
 
@@ -619,7 +621,7 @@ function Index() {
                       </div>
                     </div>
                     <div className="flex items-center gap-1.5 text-xs text-zinc-400 font-mono">
-                      <span>Studio</span>
+                      <span>Community</span>
                       <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_6px_#34d399]" />
                     </div>
                   </CommandItem>
@@ -638,7 +640,7 @@ function Index() {
                   <ArrowLeft className="h-3.5 w-3.5" /> Back to options
                 </Button>
                 <span className="text-xs font-mono uppercase tracking-widest text-zinc-400">
-                  Jahva Studio
+                  {selectedResult === "about" ? "Jahva Community" : "Jahva Studio"}
                 </span>
               </div>
 
@@ -753,12 +755,12 @@ function Index() {
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm leading-relaxed backdrop-blur-md">
                     <p className="text-zinc-200">
-                      <strong className="text-white">Jahva</strong> is an independent creative studio at the intersection of
-                      brand strategy, graphic minimalism, and in-house digital development.
+                      <strong className="text-white">Jahva</strong> is an independent creative community and collective of
+                      senior freelancers working at the intersection of brand strategy, graphic minimalism, and in-house digital development.
                     </p>
                     <p className="mt-2 text-xs text-zinc-400">
                       Core capabilities: Digital Marketing, Designing, UI/UX, Motion Animation, and
-                      Full-Stack Web &amp; Mobile Products.
+                      Full-Stack Web &amp; Mobile Products — delivered directly by specialized freelance talent without agency overhead.
                     </p>
                   </div>
                 </div>
